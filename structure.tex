@@ -2,11 +2,13 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[english]{babel} % oder german
+\usepackage[english]{babel}
 \usepackage{geometry}
 \geometry{margin=2.5cm}
+\usepackage{hyperref}
 
-\title{Outline of the Seminar Paper}
+\title{Outline of the Seminar Paper\\
+\large Modularity-based Community Detection in Bacterial and Viral Networks}
 \author{Your Name}
 \date{\today}
 
@@ -14,74 +16,226 @@
 
 \maketitle
 
-\section*{Proposed Structure of the Paper}
+\section*{Proposed Structure of the Paper (15--20 pages)}
 
 \begin{enumerate}
 
-\item \textbf{Introduction}
+\item \textbf{Introduction (2--3 pages)}
 \begin{enumerate}
   \item Motivation
+  \begin{itemize}
+    \item Why are networks important?
+    \item Biological networks (protein interactions, gene regulation)
+    \item Social networks
+    \item Information networks
+    \item Why community detection?
+    \item Functional modules
+    \item Organization of complex systems
+  \end{itemize}
+
   \item Definition of a Network
-  \item Mathematical Representation (Adjacency Matrix, Graph Definition)
-  \item What Can Be Done with Networks?
+  \begin{itemize}
+    \item Graph as a mathematical object
+    \item Nodes and edges
+    \item Directed vs. undirected networks
+    \item Weighted vs. unweighted networks
+  \end{itemize}
+
+  \item Mathematical Representation
+  \begin{itemize}
+    \item Adjacency list
+    \item Adjacency matrix
+    \item Formal definition: $G = (V, E)$
+  \end{itemize}
+
+  \item What Can We Do with Networks?
+  \begin{itemize}
+    \item Descriptive statistics
+    \item Structural analysis
+    \item Prediction
+    \item Clustering and communities
+  \end{itemize}
 \end{enumerate}
 
-\item \textbf{Network Summary Statistics}
+\item \textbf{Network Summary Statistics (2--3 pages)}
 \begin{enumerate}
-  \item Basic Metrics (Number of Nodes, Edges, Density)
+  \item Basic Metrics
+  \begin{itemize}
+    \item Number of nodes
+    \item Number of edges
+    \item Density
+    \item Average degree
+  \end{itemize}
+
   \item Degree Distribution
-  \item Centrality Measures (Degree, Edge Betweenness)
+  \begin{itemize}
+    \item Scale-free networks
+    \item Power-law behavior (if relevant)
+  \end{itemize}
+
+  \item Centrality Measures
+  \begin{itemize}
+    \item Degree centrality
+    \item Edge betweenness
+    \item Closeness and betweenness (brief)
+  \end{itemize}
 \end{enumerate}
 
-\item \textbf{Similarity Measures for Community Comparison}
+\item \textbf{Similarity Measures for Community Comparison (2 pages)}
 \begin{enumerate}
   \item Rand Index
+  \begin{itemize}
+    \item Definition and intuition
+  \end{itemize}
+
   \item Adjusted Rand Index (ARI)
+  \begin{itemize}
+    \item Correction for chance
+  \end{itemize}
+
   \item Adjusted Mutual Information (AMI)
+  \begin{itemize}
+    \item Information-theoretic perspective
+  \end{itemize}
+
   \item Comparison of ARI and AMI
+  \begin{itemize}
+    \item When to use which measure
+  \end{itemize}
 \end{enumerate}
 
-\item \textbf{Community Detection Methods}
+\item \textbf{Community Detection Methods (4--5 pages)}
 \begin{enumerate}
   \item Modularity
+  \begin{itemize}
+    \item Basic idea
+    \item Modularity formula:
+    \[
+    Q = \frac{1}{2m} \sum_{ij} (A_{ij} - P_{ij}) \delta(c_i, c_j)
+    \]
+  \end{itemize}
+
   \item Edge Betweenness (Girvan--Newman)
+  \begin{itemize}
+    \item Main focus of the paper
+    \item Idea: edges with high betweenness separate communities
+    \item Algorithm:
+    \begin{enumerate}
+      \item Compute edge betweenness
+      \item Remove the strongest edge
+      \item Repeat
+    \end{enumerate}
+    \item Advantages and disadvantages
+  \end{itemize}
+
   \item Louvain Method
+  \begin{itemize}
+    \item Greedy optimization of modularity
+    \item Very fast
+    \item Hierarchical structure
+  \end{itemize}
+
   \item Leiden Method
+  \begin{itemize}
+    \item Improvement over Louvain
+    \item Guarantees well-connected communities
+    \item State-of-the-art method
+  \end{itemize}
 \end{enumerate}
 
-\item \textbf{Data Description}
+\item \textbf{Data Description (2 pages)}
 \begin{enumerate}
-  \item Data Source (Bacterial and Viral Networks)
-  \item Network Structure (Nodes and Edges Interpretation)
-  \item Preprocessing Steps
+  \item Data Source
+  \begin{itemize}
+    \item Bacterial network
+    \item Viral network
+    \item Protein homology networks
+  \end{itemize}
+
+  \item Network Structure
+  \begin{itemize}
+    \item Nodes represent proteins
+    \item Edges represent sequence similarity
+    \item Weights: bit score or e-value
+  \end{itemize}
+
+  \item Preprocessing
+  \begin{itemize}
+    \item Filtering
+    \item Removal of self-loops
+    \item Largest connected component
+  \end{itemize}
 \end{enumerate}
 
-\item \textbf{Experimental Setup}
+\item \textbf{Experimental Setup (2 pages)}
 \begin{enumerate}
-  \item Implementation (Python, R)
-  \item Hyperparameters (Resolution Parameter)
-  \item Evaluation Criteria (Modularity, ARI, AMI)
+  \item Implementation
+  \begin{itemize}
+    \item Python (NetworkX)
+    \item R (igraph)
+  \end{itemize}
+
+  \item Parameters
+  \begin{itemize}
+    \item Louvain: resolution parameter
+    \item Leiden: resolution parameter
+    \item Edge betweenness: number of cuts
+  \end{itemize}
+
+  \item Evaluation Criteria
+  \begin{itemize}
+    \item Number of communities
+    \item Community sizes
+    \item Modularity
+    \item ARI
+    \item AMI
+  \end{itemize}
 \end{enumerate}
 
-\item \textbf{Results}
+\item \textbf{Results (3--4 pages)}
 \begin{enumerate}
   \item Descriptive Comparison of Bac and Vir
+  \begin{itemize}
+    \item Size
+    \item Density
+    \item Degree distributions
+  \end{itemize}
+
   \item Method Comparison
+  \begin{itemize}
+    \item Tables: number of communities
+    \item Modularity values
+    \item Runtime
+  \end{itemize}
+
   \item Hyperparameter Sensitivity Analysis
-  \item Interpretation of Results
+  \begin{itemize}
+    \item Plots: resolution vs. number of communities
+    \item ARI and AMI vs. resolution
+  \end{itemize}
+
+  \item Interpretation
+  \begin{itemize}
+    \item Stability of communities
+    \item Biological plausibility
+  \end{itemize}
 \end{enumerate}
 
-\item \textbf{Discussion}
-\begin{enumerate}
-  \item Strengths and Limitations
-  \item Biological Interpretation
-\end{enumerate}
+\item \textbf{Discussion (2 pages)}
+\begin{itemize}
+  \item Why do Bac and Vir differ?
+  \item Which method is more stable?
+  \item When does modularity fail?
+  \item Resolution limit problem
+\end{itemize}
 
-\item \textbf{Conclusion}
-\begin{enumerate}
-  \item Summary of Findings
-  \item Outlook and Future Work
-\end{enumerate}
+\item \textbf{Conclusion (1 page)}
+\begin{itemize}
+  \item Summary of findings
+  \item Main insights
+  \item Methodological implications
+  \item Outlook and future work
+\end{itemize}
 
 \end{enumerate}
 
