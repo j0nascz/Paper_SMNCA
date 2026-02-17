@@ -24,36 +24,28 @@
 \begin{enumerate}
   \item Motivation
   \begin{itemize}
-    \item Why are networks important?
+    \item Why networks are important?
     \item Biological networks (protein interactions, gene regulation)
-    \item Social networks
-    \item Information networks
     \item Why community detection?
-    \item Functional modules
-    \item Organization of complex systems
   \end{itemize}
 
   \item Definition of a Network
   \begin{itemize}
     \item Graph as a mathematical object
     \item Nodes and edges
-    \item Directed vs. undirected networks
-    \item Weighted vs. unweighted networks
-  \end{itemize}
-
-  \item Mathematical Representation
-  \begin{itemize}
     \item Adjacency list
     \item Adjacency matrix
-    \item Formal definition: $G = (V, E)$
+    \item Directed vs. undirected networks
+    \item Weighted vs. unweighted networks
+    \item Weighted undireccted network: $G = (V, E, W)$
   \end{itemize}
 
-  \item What Can We Do with Networks?
+  \item What can we do with Networks?
   \begin{itemize}
     \item Descriptive statistics
     \item Structural analysis
-    \item Prediction
-    \item Clustering and communities
+    \item Clustering and communities 
+    \item Prediction of Future Community Behavior
   \end{itemize}
 \end{enumerate}
 
@@ -76,28 +68,19 @@
   \item Centrality Measures
   \begin{itemize}
     \item Degree centrality
-    \item Edge betweenness
+    \item Betweenness centrality
+    \begin{itemize}
+      \item Node betweenness
+      \item Edge betweenness
+    \end{itemize}
     \item Closeness and betweenness (brief)
   \end{itemize}
 \end{enumerate}
 
 \item \textbf{Similarity Measures for Community Comparison (2 pages)}
 \begin{enumerate}
-  \item Rand Index
-  \begin{itemize}
-    \item Definition and intuition
-  \end{itemize}
-
   \item Adjusted Rand Index (ARI)
-  \begin{itemize}
-    \item Correction for chance
-  \end{itemize}
-
   \item Adjusted Mutual Information (AMI)
-  \begin{itemize}
-    \item Information-theoretic perspective
-  \end{itemize}
-
   \item Comparison of ARI and AMI
   \begin{itemize}
     \item When to use which measure
@@ -133,6 +116,8 @@
     \item Greedy optimization of modularity
     \item Very fast
     \item Hierarchical structure
+    \item Limitations of Louvain
+    \item Motivation for improvement -> Leiden
   \end{itemize}
 
   \item Leiden Method
@@ -143,20 +128,31 @@
   \end{itemize}
 \end{enumerate}
 
-\item \textbf{Data Description (2 pages)}
+\newpage
+\item Data Description (2 pages)
 \begin{enumerate}
   \item Data Source
   \begin{itemize}
-    \item Bacterial network
-    \item Viral network
-    \item Protein homology networks
+    \item Bacterial protein similarity networks
+    \item Viral protein similarity networks
   \end{itemize}
 
-  \item Network Structure
+  \item Descriptive Comparison of Bac and Vir
+  \begin{itemize}
+    \item Size
+    \item Density
+    \item Degree distributions
+  \end{itemize}
+
+  \item Network Construction
   \begin{itemize}
     \item Nodes represent proteins
     \item Edges represent sequence similarity
-    \item Weights: bit score or e-value
+    \item Weights: bit score
+    \item bit score formula:
+\[
+S' = \frac{\lambda S - \ln K}{\ln 2}
+\]
   \end{itemize}
 
   \item Preprocessing
@@ -167,12 +163,12 @@
   \end{itemize}
 \end{enumerate}
 
-\item \textbf{Experimental Setup (2 pages)}
+\item Experimental Setup (2 pages)
 \begin{enumerate}
   \item Implementation
   \begin{itemize}
     \item Python (NetworkX)
-    \item R (igraph)
+    \item \url{https://github.com/j0nascz/Paper_SMNCA.git}
   \end{itemize}
 
   \item Parameters
@@ -182,25 +178,20 @@
     \item Edge betweenness: number of cuts
   \end{itemize}
 
-  \item Evaluation Criteria
-  \begin{itemize}
-    \item Number of communities
-    \item Community sizes
-    \item Modularity
-    \item ARI
-    \item AMI
-  \end{itemize}
+\item Evaluation Criteria
+\begin{itemize}
+    \item Pairwise comparison between methods and parameter settings
+    \begin{itemize}
+      \item Changing parameters(e.g resolution parameter) in Leiden and Lovain and comparing results with ARI and AMI
+    \end{itemize}
+
+\end{itemize}
+
 \end{enumerate}
 
-\item \textbf{Results (3--4 pages)}
-\begin{enumerate}
-  \item Descriptive Comparison of Bac and Vir
-  \begin{itemize}
-    \item Size
-    \item Density
-    \item Degree distributions
-  \end{itemize}
 
+\item Results (3--4 pages)
+\begin{enumerate}
   \item Method Comparison
   \begin{itemize}
     \item Tables: number of communities
@@ -208,6 +199,7 @@
     \item Runtime
   \end{itemize}
 
+  \newpage
   \item Hyperparameter Sensitivity Analysis
   \begin{itemize}
     \item Plots: resolution vs. number of communities
@@ -217,19 +209,26 @@
   \item Interpretation
   \begin{itemize}
     \item Stability of communities
-    \item Biological plausibility
   \end{itemize}
 \end{enumerate}
 
-\item \textbf{Discussion (2 pages)}
+\item Discussion (2 pages)
 \begin{itemize}
-  \item Why do Bac and Vir differ?
-  \item Which method is more stable?
-  \item When does modularity fail?
-  \item Resolution limit problem
+    \item Why do Bac and Vir differ?
+    \begin{itemize}
+        \item Structural differences between the networks
+        \item Effect on detected communities
+    \end{itemize}
+    \item Which method is more stable?
+    \begin{itemize}
+        \item Interpretation of stability based on ARI and AMI
+        \item Intra-method vs. inter-method differences
+    \end{itemize}
+    \item Interpretation of ARI/AMI results
+    \item Resolution limit problem
 \end{itemize}
 
-\item \textbf{Conclusion (1 page)}
+\item Conclusion (1 page)
 \begin{itemize}
   \item Summary of findings
   \item Main insights
