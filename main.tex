@@ -8,6 +8,9 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{geometry}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{figures/bibliography/references.bib}
 \geometry{margin=2.5cm}
 
 
@@ -24,8 +27,15 @@
 This paper investigates community structure in bacterial and viral protein similarity networks using modularity-based community detection methods. We compare several algorithms and perform a sensitivity analysis on the resolution parameter using Adjusted Rand Index and Adjusted Mutual Information.
 \end{abstract}
 
-\section{Introduction}
-\subsection{Motivation}
+\input{sections/introduction}
+\input{sections/network_summary_statistic}
+\input{sections/similarity_measures_for_community_comparison}
+\input{sections/community_detection_methods}
+\input{sections/data_description}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
 
+\printbibliography
 \end{document}
 
