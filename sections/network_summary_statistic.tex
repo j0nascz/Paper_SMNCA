@@ -1,3 +1,138 @@
-\new page
 \section{Network Summary Statistics}
 \subsection{Basic Metrics}
+\subsubsection{Number of nodes and edges}
+The number of nodes and edges are fundamental metrics that provide
+a basic understanding of the size and complexity of a network.
+The number of nodes, denoted as $|V|$, represents the total count of distinct entities in the network,
+while the number of edges, denoted as $|E|$, represents the total count of connections between those entities.
+
+\subsubsection{Density}
+Network density is a measure of how many edges are in the network compared to the maximum possible number of edges.
+THe metric is defined as the ratio of observed edges to the total possible connections,
+ranging from 0 to 1, where 0 indicates a completely disconnected network and 1 indicates a fully connected network.
+For an undirected network, the density can be calculated using the formula:
+$$\text{Density} = \frac{|E|}{\binom{|V|}{2}} = \frac{2|E|}{|V|(|V|-1)}$$
+
+\subsubsection{Average degree}
+The average degree of a netork is a network metric representing the mean number of connections per node.
+The degree of a node refers to the number of edges connected to that node. These edges
+are called incident edges, meaning edges that are directly connected to the node in question.
+In an undirected network, the degree simply counts all incident edges, 
+while in a directed network, a distinction is made between in-degree and out-degree.
+For an undirected network, it can be expressed mathematically as:
+$$\text{Average Degree} = \frac{2|E|}{|V|}$$
+For an directed network, it can be expressed mathematically as:
+$$\text{Average In-Degree} = \text{Average Out-Degree} = \frac{|E|}{|V|}$$
+Average In-Degree means the average number of incoming edges per node,
+while Average Out-Degree means the average number of outgoing edges per node.
+They are equal in a directed network because each edge contributes to both an in-degree and an out-degree.
+
+\subsection{Degree Distribution}
+\subsubsection{Definition of degree distribution}
+The degree distribution of a networ describes the probability distribution
+of the degrees of nodes in a network. It specifies the probability P(k) that a randomy selected node has 
+exactly k connections (or degree k). The distribution provides insighjt into the structural organization 
+of a network and allows the differentiation between homogeneous and heterogeneous networks.
+
+\subsubsection{Random graph and scale-free graph}
+Random graphs and scale-free graphs are two fundamental network models that differs significantly in their
+degree distributions.
+A random  graph, often modeled using the Erdős–Rényi framework, is construced by connecting nodes 
+randomly with a fixed probability p. In such networks, edges are formed independently of each other. 
+As a result, most nodes tend to have a similar number of connections, 
+leading to a relatively homogeneous structure. Highly connected nodes (hubs) are extremely rare in random graphs.
+The degree distribution of a random graph follows a Poisson distribution, which implies that most nodes have a degree
+close to the average degree. The probability function for a Poisson distribution is given by:
+$$P(k) = \frac{\lambda^k e^{-\lambda}}{k!}$$
+where $\lambda$ is the average degree of the network.
+
+Scale free graphs, on the other hand, exhibit a highly heterogeneous structure.
+These networks are grow over time, and new nodes preferentially attach to alread welll-connected nodes.
+This process leads to the emergence of hubs, which are nodes with a significantly higher degree than the average node.
+Consequently, scale-free networks are characterized by strong degree ineuqality.
+Scale-free networks follow a power-law degree distribution of the form:
+$$P(k) \sim k^{-\gamma}$$
+where $\gamma$ is a positive constant typically in the range of 2 to 3. 
+This power-law behavior indicates that while most nodes have a low degree, 
+a few nodes (hubs) have a very high degree.
+Below is a visual representation of the degree distribution for random and scale-free networks.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png}
+  \caption{Comparison of random and scale-free networks and their corresponding degree distributions. Adapted from \cite{Network-Science}.}
+  \label{fig:plot3}
+\end{figure}
+
+\subsubsection{Structural Implications}
+The degree distribution of a network has significant implications for its structure and dynamics.
+In networks with a Poisson degree distribution, connectivity is relatively uniform, meaning most of the nodes have the
+the same amount of connections and there are rarely outliers. Therefore, the network does not depend
+heavily on individual nodes. In contrast, scale-free networks are dominated by hubs, which play a crucial role
+in maintaining overall connectivity.
+The structural difference affects various network properties. For instance scale-free networks
+are typically robust against random node failures, as most nodes are low-degree nodes. However, they
+are highly vulnerable to targeted attacks on hubs. 
+Furthemore, the presence of hubs strongly influences centrality measures and also modularity.
+As a result, understanding the degree distribution is essential for intepreting community detection results 
+and structural properties. Centrality measures and Modularity will be discussed in the following sections.
+
+\newpage
+\subsection{Centrality Measures}
+\subsubsection{Degree centrality}
+Degree centrality measures a node's importance in a network by counting its total number of connections (degree).
+In an undirected network, the degree centrality of a node is simply the number of edges connected to it.
+It can be expressed mathematically as:
+$$C_D(v) = \text{deg}(v)$$
+where $\text{deg}(v)$ is the degree of node $v$.
+In a directed network, degree centrality can be further divided into in-degree centrality and out-degree centrality.
+It can be expressed mathematically as:
+$$C_{D_{in}}(v) = \text{deg}_{in}(v)$$
+$$C_{D_{out}}(v) = \text{deg}_{out}(v)$$
+where $\text{deg}_{in}(v)$ is the number 
+of incoming edges to node $v$ and $\text{deg}_{out}(v)$ is the number of outgoing edges from node $v$.
+
+\subsubsection{Betweenness centrality}
+Betweenness centrality measures the importance of a node by quantifying how often it lies on 
+shortest paths between other pairs of nodes. 
+More formally, it counts the proportion of shortest paths between all node pairs that pass through a given node.
+Mathematically, the betweenness centrality of a node $v$ is defined as:
+$$C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}$$
+where $\sigma_{st}$ is the total number of shortest paths from node $s$ to node $t$, 
+and $\sigma_{st}(v)$ is the number of those paths that pass through node $v$.
+Nodes with a high betweeness centrality often act as bridges between different parts of the network, 
+frequently connecting otherwise weakly connected communities.
+Ednge betweenness extends the same idea to edges instead of nodes. It measures how often an edge lies
+on the shortest paths between pairs of nodes.
+The betweenness centrality of an edge $e$ is defined as:
+$$C_B(e) = \sum_{s \neq t} \frac{\sigma_{st}(e)}{\sigma_{st}}$$
+where $\sigma_{st}$ is the total number of shortest paths from node $s$ to node $t$,
+and $\sigma_{st}(e)$ is the number of those paths that pass through edge $e$.
+This characteristic is particularly important in community detection methods based on edge betweenness,
+ such as the algorithm introduced by \textcite{newmanandgirvan2002}, which will be discussed in more
+ detail in the section on community detection methods.
+
+ \subsection{Modularity}
+ The core idea behind modularity is, a network has a strong community structure if:
+\begin{itemize}
+    \item there are many edges between nodes within the same community.
+    \item there are few edges between nodes in different communities.
+\end{itemize}
+Therefore, modularity compares the observed structure to a random baseline. This means
+that modularity measures how much more densely connected nodes within the same community are than 
+we would expect by chance. The modularity formula is given by:
+$$Q = \frac{1}{2m} \sum_{ij} (A_{ij} - P_{ij}) \delta(c_i, c_j)$$
+where $m$ is the total number of edges in the network,
+ $A_{ij}$ is the adjacency matrix element representing the presence 
+ of an edge between nodes $i$ and $j$, $P_{ij}$ is the expected number of edges
+  between nodes $i$ and $j$ in a random graph with the same degree distribution, 
+  and $\delta(c_i, c_j)$ is the Kronecker delta function that equals 1 if nodes $i$ and $j$ 
+  are in the same community (i.e., $c_i = c_j$) and 0 otherwise.
+The modularity value ranges theoretically between -1 and 1, 
+although in practice it typically lies between 0 and 1. 
+Higher modularity values indicate a stronger community structure, 
+meaning that more edges fall within communities than would be expected in a comparable random network.
+A known limitation of modularity is the resolution limit problem,
+meaning that small communities may not be detected because they do not contribute
+enough to the overall modularity score.
+
