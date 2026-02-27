@@ -2374,7 +2374,11 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">figures/bibliography/references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">newman2006</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">ebi_network</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">ebi_network</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">newman2006</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">rg_graph_types</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">DavidHevey2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
