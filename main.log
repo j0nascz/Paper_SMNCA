@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.26)  27 FEB 2026 21:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.26)  27 FEB 2026 22:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -601,7 +601,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
  (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./sections/introduction.tex
-<Pictures/Introduction/Plot1.jpg, id=112, 1208.515pt x 639.38875pt>
+<Pictures/Introduction/Plot1.jpg, id=128, 1208.515pt x 639.38875pt>
 File: Pictures/Introduction/Plot1.jpg Graphic file (type jpg)
 <use Pictures/Introduction/Plot1.jpg>
 Package pdftex.def Info: Pictures/Introduction/Plot1.jpg  used on input line 36.
@@ -616,7 +616,7 @@ pdfTeX warning: pdflatex.exe (file pdftex.map): cannot open font map file
  <./Pictures/Introduction/Plot1.jpg>]
 
 [2]
-<Pictures/Introduction/Plot2.png, id=138, 269.50688pt x 228.855pt>
+<Pictures/Introduction/Plot2.png, id=154, 269.50688pt x 228.855pt>
 File: Pictures/Introduction/Plot2.png Graphic file (type png)
 <use Pictures/Introduction/Plot2.png>
 Package pdftex.def Info: Pictures/Introduction/Plot2.png  used on input line 89.
@@ -626,7 +626,7 @@ Package pdftex.def Info: Pictures/Introduction/Plot2.png  used on input line 89.
 [3 <./Pictures/Introduction/Plot2.png>]
 
 [4]
-<Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png, id=159, 513.92pt x 164.615pt>
+<Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png, id=176, 513.92pt x 164.615pt>
 File: Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png Graphic file (type png)
 <use Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png>
 Package pdftex.def Info: Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png  used on input line 62.
@@ -648,24 +648,24 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D711D72B1E5E51021F2A9B69CFC18550;4823.
+(rerunfilecheck)             Checksum: 6FF9B7325DE5442EA7232E9FA0122A59;5687.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19208 strings out of 475128
- 338355 string characters out of 5763169
- 1176587 words of memory out of 5000000
- 41943 multiletter control sequences out of 15000+600000
+ 19216 strings out of 475128
+ 338475 string characters out of 5763169
+ 1176593 words of memory out of 5000000
+ 41947 multiletter control sequences out of 15000+600000
  575522 words of font info for 75 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  75i,6n,81p,739b,1779s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1095.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/cm/cmmi6.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr8.pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/cm/cmmi8.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/cm/cmsy8.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/cm/cmex10.657pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/cm/cmsy10.657pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/cm/cmr10.657pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/cm/cmmi10.657pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk>
-Output written on main.pdf (7 pages, 236420 bytes).
+Output written on main.pdf (7 pages, 242621 bytes).
 PDF statistics:
- 655 PDF objects out of 1000 (max. 8388607)
- 253 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 500000)
- 232 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 687 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 264 words of extra memory for PDF output out of 10000 (max. 10000000)
 
