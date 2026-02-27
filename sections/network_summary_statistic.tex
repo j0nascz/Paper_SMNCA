@@ -135,4 +135,19 @@ meaning that more edges fall within communities than would be expected in a comp
 A known limitation of modularity is the resolution limit problem,
 meaning that small communities may not be detected because they do not contribute
 enough to the overall modularity score.
+\subsection{Clustering Coefficient}
+\subsubsection{Definition and interpretation}
+A third property that many networks have in common is clustering, or network transitivity,
+which is the property that two vertices that are both neighbors of the same third vertex have
+a heightened probability of also being neighhbors of one another. For example in the language
+of a protein protein interaction network, if two proteins interact with the same third protein,
+they are more likely to interact with each other as well. This effect is quantified
+by the clustering coefficient C, defined by:
+$$C = \frac{3 \times \text{number of triangles}}{\text{number of connected triples}}$$
+where a triangle is a set of three nodes that are mutually connected, 
+and a connected triple is a set of three nodes where at least two of them are connected.
+
+
+
+
 
