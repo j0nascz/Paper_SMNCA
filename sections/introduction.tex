@@ -1,5 +1,6 @@
 \section{Introduction}
 \subsection{Motivation}
+\subsubsection{Why statistical network analysis is important}
 We live in a highly interconnected world where 
 many physical, social, technological and 
 biological systems consist of agents
@@ -14,22 +15,42 @@ This makes networks an important type of data
 spanning a remarkable variety of complex systems. 
 It is therefore very important to have 
 mathematically rigorous and practically 
-useful methods for statistical analysis of networks. 
-In this paper, we will focus on Community Detection in 
-biological networks, in particular 
-in bacterial and viral protein similarity networks. 
+useful methods for statistical analysis of networks.
+
+
+\subsubsection{Biological Networks}
+Biological systems are often represented as networks. Essentially,
+every biological entity has interactions with oder biological entitites,
+from th emolecular to the ecosystem level, providing us with the oppurtunity
+to model biology using many different types of netowrks such as 
+ecological, neurogical, metabolic and protein-protein networks.
 
 A protein-protein interaction network (PPI network), 
 also known as the interactome,
 is a type of biological network where a node represents 
 a protein and an edge represents the physical 
 interaction between each pair of proteins. 
-These interactions are mapped using 
-experimental techniques, 
-such as yeast two-hybrid or mass spectrometry.
-\textcite{newman2006} argues that community detection is 
-one of the most important problems in the study 
-of networks, and that it is 
-particularly relevant for biological networks.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.4\textwidth]{Pictures/Plot1.jpg}
+  \caption{Protein-protein interaction network.
+  Source: \url{https://www.ebi.ac.uk/training/online/courses/network-analysis-of-protein-interaction-data-an-introduction/types-of-biological-networks/}}
+  \label{fig:plot1}
+\end{figure}
+
+\newpage
+\subsubsection{Why Community Detection}
+\textcite{newman2006} argues that detecting and characterizing community structure 
+is one of the fundamental problems in the study of networked systems, 
+and notes that many networks of scientific interest — including biological ones — 
+naturally divide into communities. Detecting these communitys can help us understand 
+the structure and function of the network, as well as the underlying system it represents.
+For example, in the context of PPI(protein-protein interaction) networks, communities can help identify 
+unknown protein complexes.
+
+\subsection{Definition of a Network}
+\subsubsection{Graph as  a mathematical object}
+
 
 
