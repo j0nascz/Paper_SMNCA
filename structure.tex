@@ -88,7 +88,11 @@
 
 \item \textbf{Community Detection Methods (4--5 pages)}
 \begin{enumerate}
+<<<<<<< HEAD
   \item Edge Betweenness (Girvan-Newman)
+=======
+  \item Edge Betweenness (Girvan--Newman)
+>>>>>>> 61f5ba4ae41d0db3608f6be7f4fbb2e75927a872
   \begin{itemize}
     \item Main focus of the paper
     \item Idea: edges with high betweenness separate communities
@@ -102,9 +106,25 @@
   \end{itemize}
 
   \item Louvain Method
+<<<<<<< HEAD
   \item Leiden Method
   \begin{itemize}
     \item Theoretical Guarantees of the Leiden Algorithm
+=======
+  \begin{itemize}
+    \item Greedy optimization of modularity
+    \item Very fast
+    \item Hierarchical structure
+    \item Limitations of Louvain
+    \item Motivation for improvement -> Leiden
+  \end{itemize}
+
+  \item Leiden Method
+  \begin{itemize}
+    \item Improvement over Louvain
+    \item Guarantees well-connected communities
+    \item State-of-the-art method
+>>>>>>> 61f5ba4ae41d0db3608f6be7f4fbb2e75927a872
   \end{itemize}
 \end{enumerate}
 
@@ -130,7 +150,13 @@
     \item Edges represent sequence similarity
     \item Weights: bit score
     \item bit score formula:
+<<<<<<< HEAD
 \[S' = \frac{\lambda S - \ln K}{\ln 2}\]
+=======
+\[
+S' = \frac{\lambda S - \ln K}{\ln 2}
+\]
+>>>>>>> 61f5ba4ae41d0db3608f6be7f4fbb2e75927a872
   \end{itemize}
 
   \item Preprocessing
@@ -180,7 +206,11 @@
   \newpage
   \item Hyperparameter Sensitivity Analysis
   \begin{itemize}
+<<<<<<< HEAD
     \item Plots: resolution vs.number of communities
+=======
+    \item Plots: resolution vs. number of communities
+>>>>>>> 61f5ba4ae41d0db3608f6be7f4fbb2e75927a872
     \item ARI and AMI vs. resolution
   \end{itemize}
 
