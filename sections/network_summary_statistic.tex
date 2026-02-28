@@ -11,7 +11,7 @@ Network density is a measure of how many edges are in the network compared to th
 THe metric is defined as the ratio of observed edges to the total possible connections,
 ranging from 0 to 1, where 0 indicates a completely disconnected network and 1 indicates a fully connected network.
 For an undirected network, the density can be calculated using the formula:
-$$\text{Density} = \frac{|E|}{\binom{|V|}{2}} = \frac{2|E|}{|V|(|V|-1)}$$
+\[\text{Density} = \frac{|E|}{\binom{|V|}{2}} = \frac{2|E|}{|V|(|V|-1)}\]
 
 \subsubsection{Average degree}
 The average degree of a netork is a network metric representing the mean number of connections per node.
@@ -20,9 +20,9 @@ are called incident edges, meaning edges that are directly connected to the node
 In an undirected network, the degree simply counts all incident edges, 
 while in a directed network, a distinction is made between in-degree and out-degree.
 For an undirected network, it can be expressed mathematically as:
-$$\text{Average Degree} = \frac{2|E|}{|V|}$$
+\[\text{Average Degree} = \frac{2|E|}{|V|}\]
 For an directed network, it can be expressed mathematically as:
-$$\text{Average In-Degree} = \text{Average Out-Degree} = \frac{|E|}{|V|}$$
+\[\text{Average In-Degree} = \text{Average Out-Degree} = \frac{|E|}{|V|}\]
 Average In-Degree means the average number of incoming edges per node,
 while Average Out-Degree means the average number of outgoing edges per node.
 They are equal in a directed network because each edge contributes to both an in-degree and an out-degree.
@@ -43,7 +43,7 @@ As a result, most nodes tend to have a similar number of connections,
 leading to a relatively homogeneous structure. Highly connected nodes (hubs) are extremely rare in random graphs.
 The degree distribution of a random graph follows a Poisson distribution, which implies that most nodes have a degree
 close to the average degree. The probability function for a Poisson distribution is given by:
-$$P(k) = \frac{\lambda^k e^{-\lambda}}{k!}$$
+\[P(k) = \frac{\lambda^k e^{-\lambda}}{k!}\]
 where $\lambda$ is the average degree of the network.
 
 Scale free graphs, on the other hand, exhibit a highly heterogeneous structure.
@@ -51,7 +51,7 @@ These networks are grow over time, and new nodes preferentially attach to alread
 This process leads to the emergence of hubs, which are nodes with a significantly higher degree than the average node.
 Consequently, scale-free networks are characterized by strong degree ineuqality.
 Scale-free networks follow a power-law degree distribution of the form:
-$$P(k) \sim k^{-\gamma}$$
+\[P(k) \sim k^{-\gamma}\]
 where $\gamma$ is a positive constant typically in the range of 2 to 3. 
 This power-law behavior indicates that while most nodes have a low degree, 
 a few nodes (hubs) have a very high degree.
@@ -61,7 +61,7 @@ Below is a visual representation of the degree distribution for random and scale
   \centering
   \includegraphics[width=0.7\textwidth]{Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png}
   \caption{Comparison of random and scale-free networks and their corresponding degree distributions. Adapted from \cite{Network-Science}.}
-  \label{fig:plot3}
+\label{fig:plot3}
 \end{figure}
 
 \subsubsection{Structural Implications}
@@ -83,12 +83,12 @@ and structural properties. Centrality measures and Modularity will be discussed 
 Degree centrality measures a node's importance in a network by counting its total number of connections (degree).
 In an undirected network, the degree centrality of a node is simply the number of edges connected to it.
 It can be expressed mathematically as:
-$$C_D(v) = \text{deg}(v)$$
+\[C_D(v) = \text{deg}(v)\]
 where $\text{deg}(v)$ is the degree of node $v$.
 In a directed network, degree centrality can be further divided into in-degree centrality and out-degree centrality.
 It can be expressed mathematically as:
-$$C_{D_{in}}(v) = \text{deg}_{in}(v)$$
-$$C_{D_{out}}(v) = \text{deg}_{out}(v)$$
+\[C_{D_{in}}(v) = \text{deg}_{in}(v)\]
+\[C_{D_{out}}(v) = \text{deg}_{out}(v)\]
 where $\text{deg}_{in}(v)$ is the number 
 of incoming edges to node $v$ and $\text{deg}_{out}(v)$ is the number of outgoing edges from node $v$.
 
@@ -97,7 +97,7 @@ Betweenness centrality measures the importance of a node by quantifying how ofte
 shortest paths between other pairs of nodes. 
 More formally, it counts the proportion of shortest paths between all node pairs that pass through a given node.
 Mathematically, the betweenness centrality of a node $v$ is defined as:
-$$C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}$$
+\[C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}\]
 where $\sigma_{st}$ is the total number of shortest paths from node $s$ to node $t$, 
 and $\sigma_{st}(v)$ is the number of those paths that pass through node $v$.
 Nodes with a high betweeness centrality often act as bridges between different parts of the network, 
@@ -105,7 +105,7 @@ frequently connecting otherwise weakly connected communities.
 Ednge betweenness extends the same idea to edges instead of nodes. It measures how often an edge lies
 on the shortest paths between pairs of nodes.
 The betweenness centrality of an edge $e$ is defined as:
-$$C_B(e) = \sum_{s \neq t} \frac{\sigma_{st}(e)}{\sigma_{st}}$$
+\[C_B(e) = \sum_{s \neq t} \frac{\sigma_{st}(e)}{\sigma_{st}}\]
 where $\sigma_{st}$ is the total number of shortest paths from node $s$ to node $t$,
 and $\sigma_{st}(e)$ is the number of those paths that pass through edge $e$.
 This characteristic is particularly important in community detection methods based on edge betweenness,
@@ -121,7 +121,7 @@ This characteristic is particularly important in community detection methods bas
 Therefore, modularity compares the observed structure to a random baseline. This means
 that modularity measures how much more densely connected nodes within the same community are than 
 we would expect by chance. The modularity formula is given by:
-$$Q = \frac{1}{2m} \sum_{ij} (A_{ij} - P_{ij}) \delta(c_i, c_j)$$
+\[Q = \frac{1}{2m} \sum_{ij} (A_{ij} - P_{ij}) \delta(c_i, c_j)\]
 where $m$ is the total number of edges in the network,
  $A_{ij}$ is the adjacency matrix element representing the presence 
  of an edge between nodes $i$ and $j$, $P_{ij}$ is the expected number of edges
@@ -143,7 +143,7 @@ a heightened probability of also being neighhbors of one another. For example in
 of a protein protein interaction network, if two proteins interact with the same third protein,
 they are more likely to interact with each other as well. This effect is quantified
 by the clustering coefficient C, defined by:
-$$C = \frac{3 \times \text{number of triangles}}{\text{number of connected triples}}$$
+\[C = \frac{3 \times \text{number of triangles}}{\text{number of connected triples}}\]
 where a triangle is a set of three nodes that are mutually connected, 
 and a connected triple is a set of three nodes where at least two of them are connected.
 

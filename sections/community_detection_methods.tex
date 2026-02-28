@@ -4,17 +4,18 @@ the core of this study.
 \subsection{Edge Betweenness}
 The edge betweenness method, introduced by Girvan and Newman (2002),
 was made to sidestep the shortcomings of traditional community detection methods like 
-the hierachical clustering approach. The hierachical clustering method focuses on 
+the hierarchical clustering approach. The hierarchical clustering method focuses on 
 trying to construct a measure that tells us which edges are most central to communities.
 Using these measures, it constructs communities by adding the strongest edges
-to an initiall empty graph. However, this method has several drawbacks,
+to an initially empty graph. However, this method has several drawbacks,
 such as the fact that it relies on a subjective choice of the similarity measure.
 Furthermore, because it tries to build communities by adding edges,
 early mistakes made by noise in the data cannot be corrected later on.
 The edge betweenness method, on the other hand, removed weak edges from the 
 original graph, instead of adding edges.
 To find the weak edges of a graoh, Girvan and Newman generalized Freeman's betweenness centrality
-to edges. \textcite{newmanandgirvan2002} states if a network contains communities
+to edges.
+\textcite{newmanandgirvan2002} states if a network contains communities
 or groups that are only loosely connected by fe integroup edges, then all shortest paths
 different communities must go along one of these few edges. Thus, the edges connecting
 communities will have high edge betweenness. By removing these edges, we seperate groups
@@ -41,7 +42,221 @@ recalculating betweennesses after the removal of each edge, we can ensure that
 at least one of the remaining edges between two communities will always have high betweenness.
 
 \subsection{Louvain Method}
-The Louvain Algorithm 
+The Louvain Algorithm introduced by Blondel et al. (2008) is a popular method
+for community detection in large networks. The core idea is to group nodes 
+so that connections inside communities are denser, than expected at random.
+Louvain does this by greedy, local optmization of the modularity measure, 
+combined with a hierarchical approach.
+The algorithm consists of two phases that are repeated iteratively until no
+further improvement in modularity is possible:
+\begin{enumerate}
+  \item \textbf{Modularity Optimization:} 
+  \begin{itemize}
+    \item Initially, each node is assigned to its own community. 
+    \item For each node i, we consider the moving it to the community of each neighbor.
+    \item The change in modularity $\Delta Q$ is calculated for each possible move, 
+    and the node is moved to the community that results in the highest increase in modularity.
+    $\Delta Q$ is given by the formula: 
+    \[\Delta Q=Q(i \in C)-Q(i \in A)\]
+    where $Q(i \in C)$ is the modularity of the network if node i is moved to community C, 
+    and $Q(i \in A)$ is the modularity if node i remains in its current community A.
+    The formula for calculating modularity is as earlier given by: 
+    \[Q=\frac{1}{2m}\sum_{ij}\left[A_{ij}-\gamma \frac{k_i k_j}{2m}\right]\delta(c_i, c_j)\]
+    where $A_{ij}$ is the adjacency matrix of the graph, $k_i$ and $k_j$ are the degrees of nodes i and j,
+    m is the total number of edges in the graph, $c_i$ and $c_j$ are the communities of nodes i and j, 
+    and $\delta(c_i, c_j)$ is the Kronecker delta function which is 1 if $c_i = c_j$ and 0 otherwise.
+    $\gamma$ is the resolution parameter that allows us to control the size of the communities detected.
+    If $\gamma$ is set to 1, we get the standard modularity. If $\gamma$ is set to a value less than 1, we will get larger communities, 
+    and if $\gamma$ is set to a value greater than 1, we will get smaller communities.
+    We will play around with the resolution parameter later on in the sensitivity analysis section, to see
+    how it affects the community structure of our networks.
+  \end{itemize}
+  \item \textbf{Community Aggregation:} 
+  \begin{itemize}
+    \item After no more individual node movements can increase modularity, we create a 
+    new network where each community is treated as a single node,
+          also known as supernode.
+    \item Edges between supernodes are replaced by wweighted edges,
+          where the weight of the edge between two supernodes is the sum of the weights 
+          of the edges between the nodes in the corresponding communities.
+    \item Edges within the same community are represented as self-loops 
+  \end{itemize}
+\end{enumerate}
+In the figure below, we can see an visualization of the Louvain method.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.4\textwidth]{Pictures/community_detection_methods/Louvain.png}
+\caption{Visual representation of the Louvain method for community detection. Adapted from\cite{Louvain}.}
+\label{fig:louvain}
+\end{figure}
+
+The hierarchical nature of the Louvain method allows it to capture community structure at multiple scales, and it is computationally efficient, 
+with a time complexity of $O(n \log n)$ in practice, making it suitable for large networks.
+However there are several notable limitations to the Louvain method, firstly, it does not guarantee that the detected communities
+are internally connected. In practice, a community may consist of multiple disconnected components.
+Furthermore, the algorithm may converge to a local maximum of modularity, as it only ensures that  no single node move can further increase 
+modularity.
+These shortcomings motivated Traag, Waltman and van Eck (2019) to introduce the Leiden algorithm, which will be discussed in the 
+following section.
+
+\subsection{Leiden Method}
+We here introduce the Leiden algorithm, which guarantees well connected communities.
+The algorithm is partly based on the previous introduced smart local moving algorithm, 
+which is a faster version of the Louvain algorithm.
+The Leiden algorithm also takes advantage of the idea of speeding up the local moving of nodes and the idea of moving nodes to 
+a random neighbour by only considering a subset of nodes that are likely to move.\textcite{Leiden} states that they consider
+these ideas to represent the most promising the most promising directions in which Louvain algorithm can be improved,
+even though they recognise that other improvments have been suggested as well.
+The Leiden algorithm consists of three phases:
+\begin{enumerate}
+  \item \textbf{Local Moving of Nodes:} 
+  \begin{itemize}
+    \item Similar to the Louvain method, each node is initially assigned to its own community.
+    \item For each node i, we consider moving it to the community of each neighbor, and calculate 
+    the change in modularity $\Delta Q$ for each possible move.
+    \item The node is moved to the community that results in the highest increase in modularity, 
+    but only if this move does not lead to disconnected communities.
+  \end{itemize}
+  \item \textbf{Refinement of Communities:} 
+  \begin{itemize}
+    \item After no more individual node movements can increase modularity, we refine the communities
+     by splitting them into smaller subcommunities if it leads to an increase in modularity.
+  \end{itemize}
+  \item \textbf{Community Aggregation:} 
+  \begin{itemize}
+    \item Similar to the Louvain method, we create a new network where each community is treated as a single node, 
+    and edges between supernodes are replaced by weighted edges.
+  \end{itemize}
+\end{enumerate}
+In the figure below, we can see an visualization of the Leiden method.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.4\textwidth]{Pictures/community_detection_methods/Leiden.png}
+\caption{Visual representation of the Leiden method for community detection. Adapted from\cite{Leidenplot}.}
+\label{fig:leidenplot}
+\end{figure}
+
+\textcite{Leiden} explains that in contrast to the Louvain algorithm, 
+the Leiden algorithm introduces an 
+additional refinement phase between the local moving phase and the aggregation phase. 
+The purpose of this refinement step is to construct a partition that refines 
+the partition obtained after the local moving phase. More precisely, if the 
+partition resulting from the local moving phase is denoted by $P$, the refinement 
+phase identifies a new partition $P'$, where each community in $P'$ is a subset 
+of a community in $P$. Thus, communities in $P$ may be subdivided into smaller, 
+more internally cohesive subcommunities in $P'$.
+
+Initially, the refined partition $P'$ assigns each node to its own singleton 
+community. Subsequently, nodes are merged within their original community in $P$, 
+but only if such merges improve the quality function. Importantly, merging is 
+restricted to nodes that belong to the same community in $P$, ensuring that $P'$ 
+remains a refinement of $P$. After the refinement phase, communities in $P'$ 
+may consist of multiple nodes, yet they remain strictly contained within the 
+original communities of $P$.
+
+Compared to the Louvain algorithm, this refinement phase provides greater 
+flexibility in exploring alternative partitions. Whereas Louvain performs 
+greedy node movements without revisiting earlier decisions, Leiden systematically 
+evaluates potential merges within communities. Merges are only accepted if they 
+increase the quality function, thereby preventing deteriorations in partition quality. 
+As a result, the algorithm is able to escape poorly connected or suboptimal 
+community configurations.
+
+Another important difference concerns the local moving phase itself. 
+In the Louvain algorithm, nodes are considered in a fixed order, and once 
+a node is moved, it is not reconsidered unless it is affected by subsequent 
+movements. In contrast, the Leiden algorithm maintains a queue of nodes that 
+require reevaluation. Whenever a node changes community, its neighbors are 
+added to the queue to ensure that their potential moves are reconsidered. 
+This dynamic updating procedure continues until no further improvements can 
+be achieved. By revisiting affected nodes, Leiden avoids prematurely fixing 
+suboptimal assignments and improves convergence toward higher-quality partitions.
+
+\subsubsection{Theoretical Guarantees of the Leiden Algorithm}
+
+The Leiden algorithm is executed iteratively, where the partition obtained 
+in one iteration serves as the starting point for the next. This iterative 
+structure allows the algorithm to progressively refine the community 
+structure and provides several theoretical guarantees at different stages 
+of convergence. Below, we give an intuitive overview of these guarantees. 
+Formal definitions and mathematical proofs can be found in the supplementary material.
+
+After each iteration of the Leiden algorithm, the following properties hold:
+
+\begin{enumerate}
+    \item All communities are $\gamma$-separated.
+    \item All communities are $\gamma$-connected.
+\end{enumerate}
+
+Here, $\gamma$ denotes the resolution parameter of the quality function 
+being optimized, such as modularity. 
+The property of $\gamma$-separation implies that no pair of communities 
+can be merged without decreasing the quality function. This property is 
+also satisfied by the Louvain algorithm. 
+
+The property of $\gamma$-connectivity is stronger than ordinary connectivity. 
+It guarantees that communities are internally well connected in a manner 
+consistent with the resolution parameter. In contrast, the Louvain algorithm 
+does not guarantee connectivity and therefore does not ensure $\gamma$-connectivity.
+
+An iteration in which the partition remains unchanged is referred to as a 
+\emph{stable iteration}. After a stable iteration of the Leiden algorithm, 
+two additional guarantees hold:
+
+\begin{enumerate}
+    \item All nodes are locally optimally assigned.
+    \item All communities are subpartition $\gamma$-dense.
+\end{enumerate}
+
+Local optimality of nodes means that no individual node can be moved to 
+another community in a way that improves the quality function. This 
+property is also guaranteed after a stable iteration of the Louvain algorithm.
+
+Subpartition $\gamma$-density, however, is not guaranteed by Louvain. 
+A community is subpartition $\gamma$-dense if it cannot be decomposed 
+into internally separable parts without reducing the quality function. 
+In other words, each community consists of well-connected components 
+that themselves satisfy the same density condition recursively. 
+This property ensures structural cohesion beyond simple node-level optimality.
+
+Unlike the Louvain algorithm, the Leiden algorithm may still improve 
+the partition even after a stable iteration. When iterated until full 
+convergence, the Leiden algorithm yields a partition satisfying two 
+stronger guarantees:
+
+\begin{enumerate}
+    \item All communities are uniformly $\gamma$-dense.
+    \item All communities are subset optimal.
+\end{enumerate}
+
+Uniform $\gamma$-density means that no subset of a community can be 
+separated from it without decreasing the quality function. Regardless 
+of how a community is divided into two parts, these parts remain 
+sufficiently well connected. This implies that the overall partition 
+is close to optimal with respect to the quality function.
+
+Subset optimality represents the strongest guarantee of the Leiden algorithm. 
+It states that every subset of every community is locally optimally assigned; 
+that is, no subset of nodes can be moved to another community in a way that 
+improves the objective function. Subset optimality implies uniform 
+$\gamma$-density and all previously mentioned properties.
+
+In summary, while the Louvain algorithm guarantees only local node-level 
+optimality and $\gamma$-separation, the Leiden algorithm provides 
+substantially stronger guarantees, ensuring well-connected, structurally 
+cohesive, and near-optimal communities.
+
+Here is an Overview of the guarantees provided by the Louvain algorithm and the Leiden algorithm.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/community_detection_methods/Overview.png}
+\caption{Visual representation of the guarantees of the Leiden algorithm. Adapted from \cite{OverwiewGuarantees}.}
+\label{fig:Overviewguarantees}
+\end{figure}
+Due to its stronger theoretical guarantees and improved partition quality, 
+the Leiden algorithm is widely regarded as a state-of-the-art method for community detection in large-scale networks.
+
 
 
 

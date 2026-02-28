@@ -1,338 +1,346 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.26)  28 FEB 2026 13:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.2.28)  28 FEB 2026 15:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **c:/Users/jonas/OneDrive/Documents/Paper_SMNCA/main.tex
 (c:/Users/jonas/OneDrive/Documents/Paper_SMNCA/main.tex
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
-(c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
-(c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count196
-\c@section=\count197
-\c@subsection=\count198
-\c@subsubsection=\count199
-\c@paragraph=\count266
-\c@subparagraph=\count267
-\c@figure=\count268
-\c@table=\count269
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen141
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
+\bibindent=\dimen148
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/03/27 v25.6 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
-\babel@savecnt=\count270
-\U@D=\dimen142
-\l@unhyphenated=\language5
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def)
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2026/02/14 v26.3 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+\babel@savecnt=\count283
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2082.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2083.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2084.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2086.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2111.
+\U@D=\dimen149
+\l@unhyphenated=\language79
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count271
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel-english/english.ldf
+\bbl@dirlevel=\count284
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4206.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-english.tex)
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 4330.
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language3). Reported on input line 105.
+(babel)             (\language73). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language3). Reported on input line 108.
-)) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 11.
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2024/11/05 v2.17t AMS math features
+(babel)             (\language73). Reported on input line 108.
+)) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+(C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
-\ex@=\dimen143
-)) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+\ex@=\dimen150
+)) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen144
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+\pmbraise@=\dimen151
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count272
+\inf@bad=\count285
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count273
-\leftroot@=\count274
+\uproot@=\count286
+\leftroot@=\count287
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count275
-\DOTSCASE@=\count276
+\classnum@=\count288
+\DOTSCASE@=\count289
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box52
-\strutbox@=\box53
+\Mathstrutbox@=\box53
+\strutbox@=\box54
 LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen145
+\big@size=\dimen152
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count277
+\macc@depth=\count290
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count278
+\c@MaxMatrixCols=\count291
 \dotsspace@=\muskip17
-\c@parentequation=\count279
-\dspbrk@lvl=\count280
+\c@parentequation=\count292
+\dspbrk@lvl=\count293
 \tag@help=\toks20
-\row@=\count281
-\column@=\count282
-\maxfields@=\count283
+\row@=\count294
+\column@=\count295
+\maxfields@=\count296
 \andhelp@=\toks21
-\eqnshift@=\dimen146
-\alignsep@=\dimen147
-\tagshift@=\dimen148
-\tagwidth@=\dimen149
-\totwidth@=\dimen150
-\lineht@=\dimen151
+\eqnshift@=\dimen153
+\alignsep@=\dimen154
+\tagshift@=\dimen155
+\tagwidth@=\dimen156
+\totwidth@=\dimen157
+\lineht@=\dimen158
 \@envbody=\toks22
 \multlinegap=\skip52
 \multlinetaggap=\skip53
 \mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+)) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks24
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen152
-\Gin@req@width=\dimen153
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+\Gin@req@height=\dimen159
+\Gin@req@width=\dimen160
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+)) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count284
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count285
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+\c@section@level=\count297
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count298
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen154
-\Hy@linkcounter=\count286
-\Hy@pagecounter=\count287
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+\@linkdim=\dimen161
+\Hy@linkcounter=\count299
+\Hy@pagecounter=\count300
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count288
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count301
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4157.
-Package hyperref Info: Link nesting OFF on input line 4162.
-Package hyperref Info: Hyper index ON on input line 4165.
-Package hyperref Info: Plain pages OFF on input line 4172.
-Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count289
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+Package hyperref Info: Bookmarks ON on input line 4468.
+\c@Hy@tempcnt=\count302
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen155
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+LaTeX Info: Redefining \url on input line 4807.
+\XeTeXLinkMargin=\dimen162
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count290
-\Field@Width=\dimen156
-\Fld@charsize=\dimen157
-Package hyperref Info: Hyper figures OFF on input line 6042.
-Package hyperref Info: Link nesting OFF on input line 6047.
-Package hyperref Info: Hyper index ON on input line 6050.
-Package hyperref Info: backreferencing OFF on input line 6057.
-Package hyperref Info: Link coloring OFF on input line 6062.
-Package hyperref Info: Link coloring with OCG OFF on input line 6067.
-Package hyperref Info: PDF/A mode OFF on input line 6072.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
-package with kernel methods
-)
-\Hy@abspage=\count291
-\c@Item=\count292
-\c@Hfootnote=\count293
+\Fld@menulength=\count303
+\Field@Width=\dimen163
+\Fld@charsize=\dimen164
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring OFF on input line 6104.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
+\Hy@abspage=\count304
+\c@Item=\count305
+\c@Hfootnote=\count306
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
-with kernel methods
-)
-\Fld@listcount=\count294
-\c@bookmark@seq@number=\count295
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
+\Fld@listcount=\count307
+\c@bookmark@seq@number=\count308
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip54
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count296
-\Gm@cntv=\count297
-\c@Gm@tempcnt=\count298
-\Gm@bindingoffset=\dimen158
-\Gm@wd@mp=\dimen159
-\Gm@odd@mp=\dimen160
-\Gm@even@mp=\dimen161
-\Gm@layoutwidth=\dimen162
-\Gm@layoutheight=\dimen163
-\Gm@layouthoffset=\dimen164
-\Gm@layoutvoffset=\dimen165
+\Gm@cnth=\count309
+\Gm@cntv=\count310
+\c@Gm@tempcnt=\count311
+\Gm@bindingoffset=\dimen165
+\Gm@wd@mp=\dimen166
+\Gm@odd@mp=\dimen167
+\Gm@even@mp=\dimen168
+\Gm@layoutwidth=\dimen169
+\Gm@layoutheight=\dimen170
+\Gm@layouthoffset=\dimen171
+\Gm@layoutvoffset=\dimen172
 \Gm@dimlist=\toks25
-) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.sty
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
-\csq@reset=\count299
-\csq@gtype=\count300
-\csq@glevel=\count301
-\csq@qlevel=\count302
-\csq@maxlvl=\count303
-\csq@tshold=\count304
+\csq@reset=\count312
+\csq@gtype=\count313
+\csq@glevel=\count314
+\csq@qlevel=\count315
+\csq@maxlvl=\count316
+\csq@tshold=\count317
 \csq@ltx@everypar=\toks26
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.def
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.cfg
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
-)) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.sty
+)) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/logreq.sty
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count305
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/logreq.def
+\lrq@indent=\count318
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+)) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count306
-\c@listtotal=\count307
-\c@listcount=\count308
-\c@liststart=\count309
-\c@liststop=\count310
-\c@citecount=\count311
-\c@citetotal=\count312
-\c@multicitecount=\count313
-\c@multicitetotal=\count314
-\c@instcount=\count315
-\c@maxnames=\count316
-\c@minnames=\count317
-\c@maxitems=\count318
-\c@minitems=\count319
-\c@citecounter=\count320
-\c@maxcitecounter=\count321
-\c@savedcitecounter=\count322
-\c@uniquelist=\count323
-\c@uniquename=\count324
-\c@refsection=\count325
-\c@refsegment=\count326
-\c@maxextratitle=\count327
-\c@maxextratitleyear=\count328
-\c@maxextraname=\count329
-\c@maxextradate=\count330
-\c@maxextraalpha=\count331
-\c@abbrvpenalty=\count332
-\c@highnamepenalty=\count333
-\c@lownamepenalty=\count334
-\c@maxparens=\count335
-\c@parenlevel=\count336
-\blx@tempcnta=\count337
-\blx@tempcntb=\count338
-\blx@tempcntc=\count339
-\c@blx@maxsection=\count340
-\blx@maxsegment@0=\count341
-\blx@notetype=\count342
-\blx@parenlevel@text=\count343
-\blx@parenlevel@foot=\count344
-\blx@sectionciteorder@0=\count345
-\blx@sectionciteorderinternal@0=\count346
-\blx@entrysetcounter=\count347
-\blx@biblioinstance=\count348
+\c@tabx@nest=\count319
+\c@listtotal=\count320
+\c@listcount=\count321
+\c@liststart=\count322
+\c@liststop=\count323
+\c@citecount=\count324
+\c@citetotal=\count325
+\c@multicitecount=\count326
+\c@multicitetotal=\count327
+\c@instcount=\count328
+\c@maxnames=\count329
+\c@minnames=\count330
+\c@maxitems=\count331
+\c@minitems=\count332
+\c@citecounter=\count333
+\c@maxcitecounter=\count334
+\c@savedcitecounter=\count335
+\c@uniquelist=\count336
+\c@uniquename=\count337
+\c@refsection=\count338
+\c@refsegment=\count339
+\c@maxextratitle=\count340
+\c@maxextratitleyear=\count341
+\c@maxextraname=\count342
+\c@maxextradate=\count343
+\c@maxextraalpha=\count344
+\c@abbrvpenalty=\count345
+\c@highnamepenalty=\count346
+\c@lownamepenalty=\count347
+\c@maxparens=\count348
+\c@parenlevel=\count349
+\blx@tempcnta=\count350
+\blx@tempcntb=\count351
+\blx@tempcntc=\count352
+\c@blx@maxsection=\count353
+\blx@maxsegment@0=\count354
+\blx@notetype=\count355
+\blx@parenlevel@text=\count356
+\blx@parenlevel@foot=\count357
+\blx@sectionciteorder@0=\count358
+\blx@sectionciteorderinternal@0=\count359
+\blx@entrysetcounter=\count360
+\blx@biblioinstance=\count361
 \labelnumberwidth=\skip55
 \labelalphawidth=\skip56
 \biblabelsep=\skip57
@@ -343,87 +351,87 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \bibhang=\skip62
 \blx@bcfin=\read3
 \blx@bcfout=\write3
-\blx@langwohyphens=\language6
-\c@mincomprange=\count349
-\c@maxcomprange=\count350
-\c@mincompwidth=\count351
+\blx@langwohyphens=\language80
+\c@mincomprange=\count362
+\c@maxcomprange=\count363
+\c@mincompwidth=\count364
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-dm.def
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
 File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count352
-\c@savedafterword=\count353
-\c@annotator=\count354
-\c@savedannotator=\count355
-\c@author=\count356
-\c@savedauthor=\count357
-\c@bookauthor=\count358
-\c@savedbookauthor=\count359
-\c@commentator=\count360
-\c@savedcommentator=\count361
-\c@editor=\count362
-\c@savededitor=\count363
-\c@editora=\count364
-\c@savededitora=\count365
-\c@editorb=\count366
-\c@savededitorb=\count367
-\c@editorc=\count368
-\c@savededitorc=\count369
-\c@foreword=\count370
-\c@savedforeword=\count371
-\c@holder=\count372
-\c@savedholder=\count373
-\c@introduction=\count374
-\c@savedintroduction=\count375
-\c@namea=\count376
-\c@savednamea=\count377
-\c@nameb=\count378
-\c@savednameb=\count379
-\c@namec=\count380
-\c@savednamec=\count381
-\c@translator=\count382
-\c@savedtranslator=\count383
-\c@shortauthor=\count384
-\c@savedshortauthor=\count385
-\c@shorteditor=\count386
-\c@savedshorteditor=\count387
-\c@labelname=\count388
-\c@savedlabelname=\count389
-\c@institution=\count390
-\c@savedinstitution=\count391
-\c@lista=\count392
-\c@savedlista=\count393
-\c@listb=\count394
-\c@savedlistb=\count395
-\c@listc=\count396
-\c@savedlistc=\count397
-\c@listd=\count398
-\c@savedlistd=\count399
-\c@liste=\count400
-\c@savedliste=\count401
-\c@listf=\count402
-\c@savedlistf=\count403
-\c@location=\count404
-\c@savedlocation=\count405
-\c@organization=\count406
-\c@savedorganization=\count407
-\c@origlocation=\count408
-\c@savedoriglocation=\count409
-\c@origpublisher=\count410
-\c@savedorigpublisher=\count411
-\c@publisher=\count412
-\c@savedpublisher=\count413
-\c@language=\count414
-\c@savedlanguage=\count415
-\c@origlanguage=\count416
-\c@savedoriglanguage=\count417
-\c@pageref=\count418
-\c@savedpageref=\count419
+\c@afterword=\count365
+\c@savedafterword=\count366
+\c@annotator=\count367
+\c@savedannotator=\count368
+\c@author=\count369
+\c@savedauthor=\count370
+\c@bookauthor=\count371
+\c@savedbookauthor=\count372
+\c@commentator=\count373
+\c@savedcommentator=\count374
+\c@editor=\count375
+\c@savededitor=\count376
+\c@editora=\count377
+\c@savededitora=\count378
+\c@editorb=\count379
+\c@savededitorb=\count380
+\c@editorc=\count381
+\c@savededitorc=\count382
+\c@foreword=\count383
+\c@savedforeword=\count384
+\c@holder=\count385
+\c@savedholder=\count386
+\c@introduction=\count387
+\c@savedintroduction=\count388
+\c@namea=\count389
+\c@savednamea=\count390
+\c@nameb=\count391
+\c@savednameb=\count392
+\c@namec=\count393
+\c@savednamec=\count394
+\c@translator=\count395
+\c@savedtranslator=\count396
+\c@shortauthor=\count397
+\c@savedshortauthor=\count398
+\c@shorteditor=\count399
+\c@savedshorteditor=\count400
+\c@labelname=\count401
+\c@savedlabelname=\count402
+\c@institution=\count403
+\c@savedinstitution=\count404
+\c@lista=\count405
+\c@savedlista=\count406
+\c@listb=\count407
+\c@savedlistb=\count408
+\c@listc=\count409
+\c@savedlistc=\count410
+\c@listd=\count411
+\c@savedlistd=\count412
+\c@liste=\count413
+\c@savedliste=\count414
+\c@listf=\count415
+\c@savedlistf=\count416
+\c@location=\count417
+\c@savedlocation=\count418
+\c@organization=\count419
+\c@savedorganization=\count420
+\c@origlocation=\count421
+\c@savedoriglocation=\count422
+\c@origpublisher=\count423
+\c@savedorigpublisher=\count424
+\c@publisher=\count425
+\c@savedpublisher=\count426
+\c@language=\count427
+\c@savedlanguage=\count428
+\c@origlanguage=\count429
+\c@savedoriglanguage=\count430
+\c@pageref=\count431
+\c@savedpageref=\count432
 \shorthandwidth=\skip63
 \shortjournalwidth=\skip64
 \shortserieswidth=\skip65
@@ -440,41 +448,41 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip76
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-compat.def
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
 File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.def
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count420
-\c@textcitetotal=\count421
-\c@textcitemaxnames=\count422
-\c@biburlbigbreakpenalty=\count423
-\c@biburlbreakpenalty=\count424
-\c@biburlnumpenalty=\count425
-\c@biburlucpenalty=\count426
-\c@biburllcpenalty=\count427
+\c@textcitecount=\count433
+\c@textcitetotal=\count434
+\c@textcitemaxnames=\count435
+\c@biburlbigbreakpenalty=\count436
+\c@biburlbreakpenalty=\count437
+\c@biburlnumpenalty=\count438
+\c@biburlucpenalty=\count439
+\c@biburllcpenalty=\count440
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count428
+\c@smartand=\count441
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\authoryear.bbx
 File: authoryear.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count429
-\c@bbx:relatedtotal=\count430
+\c@bbx:relatedcount=\count442
+\c@bbx:relatedtotal=\count443
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\authoryear.cbx
 File: authoryear.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -486,24 +494,23 @@ Package biblatex Info: Redefining '\textcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.cfg
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-01-18 L3 programming layer (loader) 
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count431
-\l__pdf_internal_box=\box54
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2026-01-19 L3 programming layer (loader) 
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count444
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2025-01-18 L3 programming layer (loader) 
+(biblatex)             2026-01-19 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2024-08-16 L3 Experimental document command parser
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 ))
@@ -511,7 +518,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (./main.aux)
+ (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
@@ -532,14 +539,27 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count445
+\scratchdimen=\dimen173
+\scratchbox=\box55
+\nofMPsegments=\count446
+\nofMParguments=\count447
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count448
+\MPscratchDim=\dimen174
+\MPnumerator=\count449
+\makeMPintoPDFobject=\count450
+\everyMPtoPDFconversion=\toks28
+) (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 22.
- (./main.out) (./main.out)
+ (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -580,7 +600,7 @@ Package hyperref Info: Link coloring OFF on input line 22.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-(c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+(C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -590,86 +610,82 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl)
+ (main.bbl)
 Package biblatex Info: Reference section=0 on input line 22.
 Package biblatex Info: Reference segment=0 on input line 22.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
- (c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./sections/introduction.tex
-<Pictures/Introduction/Plot1.jpg, id=148, 1208.515pt x 639.38875pt>
+) (sections/introduction.tex
+<Pictures/Introduction/Plot1.jpg, id=155, 1208.515pt x 639.38875pt>
 File: Pictures/Introduction/Plot1.jpg Graphic file (type jpg)
 <use Pictures/Introduction/Plot1.jpg>
 Package pdftex.def Info: Pictures/Introduction/Plot1.jpg  used on input line 36.
 (pdftex.def)             Requested size: 182.09486pt x 96.33344pt.
+ [1
 
-
-[1
-
-
-
-pdfTeX warning: pdflatex.exe (file pdftex.map): cannot open font map file
- <./Pictures/Introduction/Plot1.jpg>]
-
-[2]
-<Pictures/Introduction/Plot2.png, id=174, 269.50688pt x 228.855pt>
+{C:/Users/jonas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Pictures/Introduction/Plot1.jpg>] [2]
+<Pictures/Introduction/Plot2.png, id=181, 269.50688pt x 228.855pt>
 File: Pictures/Introduction/Plot2.png Graphic file (type png)
 <use Pictures/Introduction/Plot2.png>
 Package pdftex.def Info: Pictures/Introduction/Plot2.png  used on input line 89.
 (pdftex.def)             Requested size: 182.09486pt x 154.63109pt.
-) (./sections/network_summary_statistic.tex
-
-[3 <./Pictures/Introduction/Plot2.png>]
-
-[4]
-<Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png, id=196, 513.92pt x 164.615pt>
+) (sections/network_summary_statistic.tex [3 <./Pictures/Introduction/Plot2.png>] [4]
+<Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png, id=202, 513.92pt x 164.615pt>
 File: Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png Graphic file (type png)
 <use Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png>
 Package pdftex.def Info: Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png  used on input line 62.
 (pdftex.def)             Requested size: 318.66948pt x 102.0753pt.
-
-
-[5 <./Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png>]
-
-[6]) (./sections/similarity_measures_for_community_comparison.tex
-
-[7]) (./sections/community_detection_methods.tex
-
-[8]) (./sections/data_description.tex) (./sections/results.tex) (./sections/discussion.tex) (./sections/conclusion.tex)
+ [5 <./Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png>] [6]) (sections/similarity_measures_for_community_comparison.tex [7]) (sections/community_detection_methods.tex [8] [9]
+<Pictures/community_detection_methods/Louvain.png, id=240, 502.12593pt x 523.9575pt>
+File: Pictures/community_detection_methods/Louvain.png Graphic file (type png)
+<use Pictures/community_detection_methods/Louvain.png>
+Package pdftex.def Info: Pictures/community_detection_methods/Louvain.png  used on input line 89.
+(pdftex.def)             Requested size: 182.09486pt x 190.01567pt.
+ [10 <./Pictures/community_detection_methods/Louvain.png>]
+<Pictures/community_detection_methods/Leiden.png, id=253, 497.60907pt x 389.20406pt>
+File: Pictures/community_detection_methods/Leiden.png Graphic file (type png)
+<use Pictures/community_detection_methods/Leiden.png>
+Package pdftex.def Info: Pictures/community_detection_methods/Leiden.png  used on input line 135.
+(pdftex.def)             Requested size: 182.09486pt x 142.42352pt.
+ [11 <./Pictures/community_detection_methods/Leiden.png>] [12]
+<Pictures/community_detection_methods/Overview.png, id=277, 702.37407pt x 261.97874pt>
+File: Pictures/community_detection_methods/Overview.png Graphic file (type png)
+<use Pictures/community_detection_methods/Overview.png>
+Package pdftex.def Info: Pictures/community_detection_methods/Overview.png  used on input line 253.
+(pdftex.def)             Requested size: 364.19667pt x 135.84596pt.
+) (sections/data_description.tex) (sections/results.tex) (sections/discussion.tex) (sections/conclusion.tex)
 Overfull \hbox (36.40068pt too wide) in paragraph at lines 40--40
 \T1/cmtt/m/n/10.95 Different -[] types -[] of -[] graphs -[] and -[] their -[] corresponding -[] adjacency -[] matrix -[] representations -[]
  []
 
-
-
-[9] (./main.aux)
+[13 <./Pictures/community_detection_methods/Overview.png>] [14] (main.aux)
  ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2358E224E19F7490392B64BF660264BE;6577.
+(rerunfilecheck)             Checksum: DF3C0B62400CACC1954411D475939DC7;7016.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19239 strings out of 475128
- 338804 string characters out of 5763169
- 1176600 words of memory out of 5000000
- 41957 multiletter control sequences out of 15000+600000
- 575522 words of font info for 75 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 75i,6n,81p,739b,1779s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1095.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/cm/cmmi6.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr8.pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/cm/cmmi8.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/cm/cmsy8.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/cm/cmex10.657pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/cm/cmsy10.657pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/cm/cmr10.657pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/cm/cmmi10.657pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> <c:/Users/jonas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk>
-Output written on main.pdf (9 pages, 255088 bytes).
+ 19624 strings out of 467867
+ 344380 string characters out of 5418334
+ 1200091 words of memory out of 5000000
+ 48189 multiletter control sequences out of 15000+600000
+ 644406 words of font info for 79 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,7n,79p,739b,1781s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (14 pages, 710085 bytes).
 PDF statistics:
- 744 PDF objects out of 1000 (max. 8388607)
- 305 compressed objects within 4 object streams
- 62 named destinations out of 1000 (max. 500000)
- 304 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 765 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 500000)
+ 335 words of extra memory for PDF output out of 10000 (max. 10000000)
 

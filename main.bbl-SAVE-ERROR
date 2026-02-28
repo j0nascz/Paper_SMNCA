@@ -1,0 +1,199 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{ebi_network}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a46f4d95505c7882cbc2d4a403cb4ce0}{%
+           family={{European Bioinformatics Institute (EMBL-EBI)}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{a46f4d95505c7882cbc2d4a403cb4ce0}
+      \strng{fullhash}{a46f4d95505c7882cbc2d4a403cb4ce0}
+      \strng{fullhashraw}{a46f4d95505c7882cbc2d4a403cb4ce0}
+      \strng{bibnamehash}{a46f4d95505c7882cbc2d4a403cb4ce0}
+      \strng{authorbibnamehash}{a46f4d95505c7882cbc2d4a403cb4ce0}
+      \strng{authornamehash}{a46f4d95505c7882cbc2d4a403cb4ce0}
+      \strng{authorfullhash}{a46f4d95505c7882cbc2d4a403cb4ce0}
+      \strng{authorfullhashraw}{a46f4d95505c7882cbc2d4a403cb4ce0}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 27 February 2026}
+      \field{title}{Network analysis of protein interaction data – Types of biological networks}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.ebi.ac.uk/training/online/courses/network-analysis-of-protein-interaction-data-an-introduction/types-of-biological-networks/
+      \endverb
+      \verb{url}
+      \verb https://www.ebi.ac.uk/training/online/courses/network-analysis-of-protein-interaction-data-an-introduction/types-of-biological-networks/
+      \endverb
+    \endentry
+    \entry{DavidHevey2018}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c5c733aef7bcec818a2bda18fd34604}{%
+           family={Hevey},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9c5c733aef7bcec818a2bda18fd34604}
+      \strng{fullhash}{9c5c733aef7bcec818a2bda18fd34604}
+      \strng{fullhashraw}{9c5c733aef7bcec818a2bda18fd34604}
+      \strng{bibnamehash}{9c5c733aef7bcec818a2bda18fd34604}
+      \strng{authorbibnamehash}{9c5c733aef7bcec818a2bda18fd34604}
+      \strng{authornamehash}{9c5c733aef7bcec818a2bda18fd34604}
+      \strng{authorfullhash}{9c5c733aef7bcec818a2bda18fd34604}
+      \strng{authorfullhashraw}{9c5c733aef7bcec818a2bda18fd34604}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PMC}
+      \field{title}{Network analysis: a brief overview and tutorial}
+      \field{year}{2018}
+    \endentry
+    \entry{newman2006}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=4bf3b98e94373b42e6f6e6dfddaf4daa}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={M.\bibnamedelimi E.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{4bf3b98e94373b42e6f6e6dfddaf4daa}
+      \strng{fullhash}{4bf3b98e94373b42e6f6e6dfddaf4daa}
+      \strng{fullhashraw}{4bf3b98e94373b42e6f6e6dfddaf4daa}
+      \strng{bibnamehash}{4bf3b98e94373b42e6f6e6dfddaf4daa}
+      \strng{authorbibnamehash}{4bf3b98e94373b42e6f6e6dfddaf4daa}
+      \strng{authornamehash}{4bf3b98e94373b42e6f6e6dfddaf4daa}
+      \strng{authorfullhash}{4bf3b98e94373b42e6f6e6dfddaf4daa}
+      \strng{authorfullhashraw}{4bf3b98e94373b42e6f6e6dfddaf4daa}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PNAS}
+      \field{title}{Modularity and community structure in networks}
+      \field{year}{2006}
+    \endentry
+    \entry{newmanandgirvan2002}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=ccdb526d2d5ced832e1a36f237bd8758}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={M.\bibnamedelimi Girvan},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=1,
+           suffix={M.\bibnamedelimi E.\bibnamedelimi J.},
+           suffixi={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{ccdb526d2d5ced832e1a36f237bd8758}
+      \strng{fullhash}{ccdb526d2d5ced832e1a36f237bd8758}
+      \strng{fullhashraw}{ccdb526d2d5ced832e1a36f237bd8758}
+      \strng{bibnamehash}{ccdb526d2d5ced832e1a36f237bd8758}
+      \strng{authorbibnamehash}{ccdb526d2d5ced832e1a36f237bd8758}
+      \strng{authornamehash}{ccdb526d2d5ced832e1a36f237bd8758}
+      \strng{authorfullhash}{ccdb526d2d5ced832e1a36f237bd8758}
+      \strng{authorfullhashraw}{ccdb526d2d5ced832e1a36f237bd8758}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PNAS}
+      \field{title}{Community structure in social and biological networks}
+      \field{year}{2002}
+    \endentry
+    \entry{rg_graph_types}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c71ca0e8ac5da7336ffa149007898f9}{%
+           family={{ResearchGate}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{fullhash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{fullhashraw}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{bibnamehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authorbibnamehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authornamehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authorfullhash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authorfullhashraw}{9c71ca0e8ac5da7336ffa149007898f9}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 27 February 2026}
+      \field{title}{Different types of graphs and their corresponding adjacency matrix representations}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/figure/Different-types-of-graphs-and-their-corresponding-adjacency-matrix-representations-The_fig1_347300725
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/figure/Different-types-of-graphs-and-their-corresponding-adjacency-matrix-representations-The_fig1_347300725
+      \endverb
+    \endentry
+    \entry{Network-Science}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=22093788b17184c5071cea0949a93442}{%
+           family={Science},
+           familyi={S\bibinitperiod},
+           given={Network},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{22093788b17184c5071cea0949a93442}
+      \strng{fullhash}{22093788b17184c5071cea0949a93442}
+      \strng{fullhashraw}{22093788b17184c5071cea0949a93442}
+      \strng{bibnamehash}{22093788b17184c5071cea0949a93442}
+      \strng{authorbibnamehash}{22093788b17184c5071cea0949a93442}
+      \strng{authornamehash}{22093788b17184c5071cea0949a93442}
+      \strng{authorfullhash}{22093788b17184c5071cea0949a93442}
+      \strng{authorfullhashraw}{22093788b17184c5071cea0949a93442}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Node Degree Distribution:Random networks versus scale-free power-law networks}
+      \verb{urlraw}
+      \verb http://www.network-science.org/powerlaw_scalefree_node_degree_distribution.html
+      \endverb
+      \verb{url}
+      \verb http://www.network-science.org/powerlaw_scalefree_node_degree_distribution.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
