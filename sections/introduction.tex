@@ -20,10 +20,10 @@ useful methods for statistical analysis of networks.
 
 \subsubsection{Biological Networks}
 Biological systems are often represented as networks. Essentially,
-every biological entity has interactions with oder biological entitites,
-from th emolecular to the ecosystem level, providing us with the oppurtunity
-to model biology using many different types of netowrks such as 
-ecological, neurogical, metabolic and protein-protein networks.
+every biological entity has interactions with other biological entities,
+from the molecular to the ecosystem level, providing us with the opportunity
+to model biological systems using many different types of networks such as 
+ecological, neurological, metabolic, and protein–protein interaction networks.
 
 A protein-protein interaction network (PPI network), 
 also known as the interactome,
@@ -35,37 +35,36 @@ interaction between each pair of proteins.
   \centering
   \includegraphics[width=0.4\textwidth]{Pictures/Introduction/Plot1.jpg}
 
-  \caption{Protein–protein interaction network. Adapted from\cite{ebi_network}.}
+  \caption{Protein–protein interaction network. Adapted from~\cite{ebi_network}.}
   \label{fig:plot1}
-  \caption{Protein–protein interaction network. Adapted from \cite{ebi_network}.}
-  \label{fig:plot1}\end{figure}
+\end{figure}
 \newpage
 \subsubsection{Why Community Detection}
 \textcite{newman2006} argues that detecting and characterizing community structure 
 is one of the fundamental problems in the study of networked systems, 
-and notes that many networks of scientific interest — including biological ones — 
+and notes that many networks of scientific interest — including biological ones — naturally divide into communities. 
 
 
-naturally divide into communities. Detecting these communitys can help us understand 
+naturally divide into communities. Detecting these communities can help us understand 
 
 the structure and function of the network, as well as the underlying system it represents.
-For example, in the context of PPI(protein-protein interaction) networks, communities can help identify 
+For example, in the context of PPI (protein–protein interaction) networks, communities can help identify 
 unknown protein complexes.
 
 \subsection{Definition of a Network}
 \subsubsection{Graph as  a mathematical object}
 We call a collection of connected objects a network. In the field of mathematics,
 a network can also be called a graph. The mathematical theory behind networks is known as graph theory.
-A graph is a mathematical object that consists of a set of objects (called vetices or nodes) that are
+A graph is a mathematical object that consists of a set of objects (called vertices or nodes) that are
 connected by links (called edges).
 
 \subsubsection{Adjacency list}
 
-An adjacency list is a graph representation method that uses an array of lists to store connections between verticec. 
+An adjacency list is a graph representation method that uses an array of lists to store connections between vertices. 
 Each array index represents a vertex, and its corresponding list contains all 
 neighboring nodes, making it highly efficient for sparse graphs($G= (V,E)$, where the number
 of edges is much less than the maximum possible number of edges).
-The main operation performed by the adjacency list data structure is to report a list of neighboprs
+The main operation performed by the adjacency list data structure is to report a list of neighbors
 of a given vertex.
 
 \subsubsection{Adjacency matrix}
@@ -75,24 +74,24 @@ contains 1 if there is an edge between vertices $i$ and $j$, or 0 if no such edg
 The diagonal elements of the matrix are all 0, since
 edges from a vertex to itself are not allowed in simple graphs.
 
-\subsubsection{Directed vs. undirected networks}
-Undirected and directed graohs are fundamental concepts in grap theory.
-An undirceted graph is a graph where the edges do not have a specific direction and
+\subsubsection{Directed vs.\ undirected networks}
+Undirected and directed graphs are fundamental concepts in graph theory.
+An undirected graph is a graph where the edges do not have a specific direction and
 it is bidirectional in nature meaning it does not have a parent-child relation concept.
 In contrast, a directed graph is a graph where the edges have a specific direction,
 indicating a one-way relationship between the vertices.
-\newpage 
+
 An important difference between directed and undirected graphs is that in a undirected graph,
 relationships are symmetric, meaning if vertex A is connected to vertex B, 
 then vertex B is also connected to vertex A. In a directed graph, relationships are asymmetric, meaning 
 if vertex A is connected to vertex B, it does not necessarily imply that vertex B is connected to vertex A.
-This Characteristic is well represented in the adjacency matrix as you can see in the figure below.
-
+This characteristic is well represented in the adjacency matrix as you can see in the figure below.
+\newpage
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.4\textwidth]{Pictures/Introduction/Plot2.png}
   \caption{Directed vs.undirected graph. Adapted from\cite{rg_graph_types}.}
-  \label{fig:plot2}
+\label{fig:plot2}
 \end{figure}
 
 \subsubsection{Weighted undirected network}
@@ -108,8 +107,8 @@ to each edge in $E$.
 \subsection{Network Analysis}
 \subsubsection{Descriptive statistics}
 \textcite{DavidHevey2018} states that Network analysis provides the capacity to 
-estimate complex patterns of relationships and the network structure can be analysed to reveal core features 
-the network.
+estimate complex patterns of relationships, and the network structure can be analyzed to reveal core 
+features of the network.
  A variety of basic descriptive metrics can be used to characterize network topology, including
 number of nodes and edges, network density, degree distribution and centrality measures.
 These measures provide an initial understanding of connectivity patterns and structural organization.
@@ -119,11 +118,12 @@ In network science, a community is a group of nodes that are more densely connec
 to the rest of the network. Detecting communities can help us understand the functional 
 organization of a system. For example, in a PPI network, groups of proteins that interact often perform
 the same function in a cell.
-Community detection methods such as Modularity, Louvain and Leiden algorithms 
+Community detection methods such as Edge-Betweenness, Louvain and Leiden algorithms 
 can be used to identify these community structures.
-For this paper, attention is given to similarity measures for community comparison such as Adjusted Rand Index (ARI) 
-and Adjusted Mutual Information (AMI), which quantify the agreement between different community structures.
-All these concepts will be explained in more detail in the following sections.
+For this paper, 
+attention is given to the Adjusted Rand Index (ARI) as a similarity measure for community comparison, 
+which quantifies the agreement between different community structures. 
+This concept will be explained in more detail in the following sections.
 
 
 

@@ -1,0 +1,28 @@
+\section{Experimental Setup}
+
+\subsection{Implementation}
+
+After describing the data and the community detection methods, 
+we now apply these methods to analyze the bacterial 
+and viral protein similarity networks.
+
+All analyses were implemented in Python. 
+Graph construction and basic network measures were computed using the 
+NetworkX library, while the Leiden algorithm was executed 
+using the \texttt{leidenalg} package in combination with \texttt{igraph}.
+
+The full source code is publicly available at:
+\url{https://github.com/j0nascz/Paper_SMNCA.git}
+
+\subsection{Evaluation Criteria}
+
+The goal of this analysis is to compare the three community detection methods
+(Edge Betweenness, Louvain, and Leiden) in terms of their ability
+to identify meaningful communities in the bac and vir networks.
+
+However, we cannot apply the edge betweenness approach proposed by Girvan and Newman,
+as it is computationally infeasible for networks of this size.
+Consequently, we focus on comparing the Louvain and Leiden methods.
+
+The evaluation is based on a pairwise comparison of the resulting partitions 
+using the Adjusted Rand Index (ARI) and the Adjusted Mutual Information (AMI).

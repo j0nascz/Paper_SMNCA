@@ -1,21 +1,23 @@
 \section{Similarity Measures for Community Comparison}
+
 \subsection{Adjusted Rand Index (ARI)}
+
 The Adjusted Rand Index (ARI) is a metric that measures the similarity
 between two partitions of the same set of nodes. 
 A partition refers to the complete division of nodes into clusters.
-THE ARI considers all pairs of nodes and evaluates whether each pair is assigned consistently to
+The ARI considers all pairs of nodes and evaluates whether each pair is assigned consistently to
 the same community or to different communities in both partitions.
 
 The classical Rand Index (RI) evaluates the proportion of node pairs that 
-are either placed in both partitions or in different partitions in both clusterings.
+are either placed in the same cluster in both partitions or in different clusters in both partitions.
 However, since random clusterings can also exhibit non-zero agreement,
-the ARI corrects this value by adjustion for chance.
+the ARI corrects this value by adjusting for chance.
 
 Formally, the ARI is defined as:
 \begin{equation}
     ARI = \frac{RI - E[RI]}{\max(RI) - E[RI]}
 \end{equation}
-where $RI$ is the Rand Index, $E[RI]$ is the expected Rand Index for random clusterings, 
+where $RI$ is the Rand Index, $E[RI]$ is the expected value of the Rand Index for random clusterings, 
 and $\max(RI)$ is the maximum possible Rand Index.
 The ARI ranges from -1 to 1, where:
 \begin{itemize}
@@ -25,19 +27,20 @@ The ARI ranges from -1 to 1, where:
 \end{itemize}
 
 \subsection{Adjusted Mutual Information (AMI)}
+
 The Adjusted Mutual Information (AMI) is another metric used to compare two partitions 
 based on information theory. It measures the mutual information between two clusterings, 
 quantifying how much knowing one partition helps to predict the cluster assignments of the other.
 
 Mutual Information (MI) measures the amount of information shared between two partitions.
 However, like the RI, MI can be biased by random agreement. The AMI corrects
-for this by substracting the expected mutual information under a random model.
+for this by subtracting the expected mutual information under a random model.
 
 The AMI is defined as:
 \begin{equation}
     AMI = \frac{MI - E[MI]}{\max(MI) - E[MI]}
 \end{equation}
-where $MI$ is the Mutual Information, $E[MI]$ is the expected Mutual
+where $MI$ is the Mutual Information, $E[MI]$ is the expected value of the Mutual
 Information for random clusterings, and $\max(MI)$ is the maximum possible Mutual Information.
 The AMI also ranges from -1 to 1, with similar interpretations as the ARI:
 \begin{itemize}
@@ -45,23 +48,25 @@ The AMI also ranges from -1 to 1, with similar interpretations as the ARI:
     \item 0 indicates agreement no better than random,
     \item Negative values indicate less agreement than expected by chance.
 \end{itemize}
+
 \subsection{Comparison of ARI and AMI}
-Both ARI and AMI are widely used for evaluating the similarity between two partitions,
+
+Both ARI and AMI are widely used for evaluating the similarity between two partitions; 
 however, they differ conceptually and computationally.
-The ARI is pair-counting based and  focused on whether pairs of nodes are assigned consistently 
-across partitions. It is relatively easy to intepret. However, it can be sensitive
+The ARI is pair-counting-based and focused on whether pairs of nodes are assigned consistently 
+across partitions. It is relatively easy to interpret. However, it can be sensitive
 to imbalanced cluster sizes.
-On the other hand, AMI is inforamtion-theoretic and evaluates how much information is shared 
-between clusterings. It is generally more robust to imbalanced cluster distribution
-and performs well when the number of clusters differs between partitions.
+On the other hand, AMI is information-theoretic and evaluates how much information is shared 
+between clusterings. It is generally more robust to imbalanced cluster distributions
+and performs well when the number of clusters differs between the partitions.
 The ARI is often preferred when interpretability and pairwise consistency
-are important, particulary in case of balanced cluster sizes.
+are important, particularly in the case of balanced cluster sizes.
 
 The AMI is advantageous when cluster sizes vary significantly or when
 comparing partitions with different numbers of communities.
 Due to its information-theoretic nature, it provides a more distribution-sensitive comparison.
-Both Indexes are valuable tools for community comparison.
-Later in the results section, we will apply both ARI and AMI to compare different
+Both indices are valuable tools for community comparison.
+Later in the results section, we will apply ARI to compare different
 community detection results.
 
 

@@ -1,0 +1,101 @@
+\newpage
+\section{Results}
+
+\subsection{Method Comparison}
+
+The results of the Leiden and Louvain algorithms applied to the Bac and Vir networks are summarized in the following table:
+
+\begin{table}[htbp]
+\centering
+\caption{Community detection results for bacterial and viral networks.}
+\label{tab:community_results}
+\begin{tabular}{lcccc}
+\hline
+Dataset & Method & \# Communities & Modularity & Runtime (s) \\
+\hline
+Bac & Louvain & 5  & 0.374 & 0.340 \\
+Bac & Leiden  & 6  & 0.333 & 0.017 \\
+Vir & Louvain & 23 & 0.892 & 0.136 \\
+Vir & Leiden  & 23 & 0.884 & 0.007 \\
+\hline
+\end{tabular}
+\end{table}
+
+For the Bac network, the Louvain algorithm identified 5 communities, 
+whereas the Leiden algorithm detected 6 communities.
+The slight increase in the number of communities produced by Leiden suggests a 
+refinement of the partition obtained by Louvain. This behavior is consistent with the theoretical properties
+of the Leiden algorithm, which aims to ensure better-connected and more internally coherent communities.
+
+In terms of modularity, Louvain achieved a value of approximately 0.374,
+while Leiden reached approximately 0.333. 
+The higher modularity value for Louvain in the bacterial network suggests that 
+Louvain is more effective at optimizing the modularity objective in this specific case.
+This indicates that, although Leiden produces a slightly more refined partition, 
+the Louvain partition achieves stronger optimization of the modularity objective under the given settings.
+
+For the Vir network, which has approximately twice as many nodes as the Bac network,
+both Louvain and Leiden identified 23 communities in the viral network.
+The strong agreement between the two methods indicates that the underlying community 
+structure is clearly defined and does not depend strongly on the specific optimization strategy.
+
+In terms of modularity, Louvain achieved a value of approximately 0.892,
+while Leiden obtained approximately 0.884.
+Although Louvain reaches a slightly higher modularity score,
+the difference between the two methods is small. 
+This indicates that both algorithms produce partitions of very similar quality 
+with respect to modularity optimization.
+
+As expected, the runtime of the Louvain algorithm was higher than that of the Leiden algorithm in both networks.
+For the Bac network, Louvain required approximately 0.340 seconds, while Leiden required approximately 0.017 seconds.
+For the Vir network, Louvain required approximately 0.136 seconds, while Leiden required approximately 0.007 seconds.
+
+This difference in runtime can be attributed to more efficient local moving, a better-structured
+aggregation phase, and faster convergence of the Leiden algorithm compared to Louvain, 
+especially in larger networks.
+
+\subsection{ARI}
+
+The Adjusted Rand Index (ARI) further confirms the strong agreement between Louvain and Leiden. 
+For the viral network, the ARI is approximately 0.979, 
+indicating an almost identical partitioning of the network by both algorithms.
+
+For the bacterial network, the ARI is slightly lower at approximately 0.958,
+yet it still reflects a very high degree of similarity. 
+The minor difference can be attributed to the additional community detected by Leiden, 
+which suggests a small refinement of the Louvain partition rather than a 
+fundamentally different community structure.
+
+Overall, the high ARI values demonstrate that both methods 
+produce highly consistent community assignments across both datasets.
+
+\subsection{Stability of Communities}
+
+The observed differences between the Bac and Vir networks can be attributed to their fundamentally
+different structural organization. The bacterial network is denser and more strongly connected,
+indicating the presence of tightly interconnected protein communities.
+Such dense connectivity implies that many proteins are linked across different regions of
+the network, resulting in a cohesive structure with numerous inter-community connections.
+
+In contrast, the viral network is sparser and contains a larger proportion of weakly
+connected nodes. Connections between modules are less frequent, leading to sharper boundaries
+between communities.
+
+These structural differences are directly reflected in the modularity values. Modularity
+measures the extent to which connections are concentrated within communities rather than 
+between them.
+
+In the dense bacterial network, the abundance of cross-community edges reduces
+the contrast between intra- and inter-community connectivity. As a result, the modularity 
+remains comparatively lower.
+
+In the sparse viral network, the clear separation between communities leads to a higher modularity score,
+as the majority of connections are concentrated within communities rather than between them.
+
+Thus, the difference in modularity between the two datasets does not indicate better algorithmic 
+performance on the viral network, but rather reflects the intrinsic topological differences between 
+a densely interconnected graph and a more clearly segmented modular structure.
+
+
+
+

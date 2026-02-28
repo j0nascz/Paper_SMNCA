@@ -1,0 +1,33 @@
+\section{Conclusion}
+
+\subsection{Summary of Findings}
+
+This study compared the performance of the Louvain and Leiden community detection algorithms
+on two biological networks: a bacterial protein–protein interaction network (Bac) 
+and a viral protein–protein interaction network (Vir). 
+The results, evaluated using the Adjusted Rand Index (ARI), show that both methods identify
+highly consistent community structures across both networks. 
+This is also reflected in the similar number of communities detected and the comparable modularity scores.
+
+A notable difference observed in this study is that the runtime of
+the Leiden algorithm was significantly lower than that of the Louvain algorithm.
+This efficiency gain is particularly evident in the larger viral network, 
+where Leiden's runtime was approximately an order of magnitude faster than Louvain's.
+
+Overall, the findings suggest that both Louvain and Leiden are 
+effective methods for community detection in biological networks.
+
+\subsection{Outlook and Future Work}
+
+This study was originally intended to include an evaluation of the edge-betweenness 
+algorithm by Girvan and Newman. However, due to runtime limitations, it was not possible
+to include it in the analysis. For future work, it may be worthwhile to explore
+ways to improve the computational efficiency of the algorithm. At present, it runs in time 
+$O(n^3)$ on sparse graphs, which makes it infeasible for larger networks.
+
+Future research could also further investigate intra-method stability by varying the
+resolution parameter in both the Louvain and Leiden algorithms.
+Additionally, alternative quality functions beyond modularity could
+be explored to address potential limitations such as the resolution limit problem.
+Finally, integrating biological validation of detected communities would provide further 
+insight into the functional relevance of the identified modular structures.

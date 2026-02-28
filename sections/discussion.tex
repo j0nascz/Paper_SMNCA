@@ -1,0 +1,34 @@
+\section{Discussion}
+
+\subsection{Differences Between Bac and Vir Networks}
+
+The observed differences in community structure between the Bac and Vir networks
+can primarily be attributed to their underlying structural organization.
+The Bac network is characterized by a higher edge density and stronger overall connectivity,
+suggesting the presence of tightly interconnected protein communities.
+In contrast, the Vir network exhibits a sparser structure with a larger 
+proportion of weakly connected nodes.
+
+\subsection{Which Method Is More Stable}
+
+Stability in community detection refers to the robustness 
+of identified partitions under methodological variation.
+The high agreement between Louvain and Leiden in both networks, as indicated by the ARI values,
+suggests that both methods produce stable community assignments.
+This reinforces confidence in the reliability of the detected communities.
+
+\subsection{Resolution Limit Problem}
+
+An important limitation of modularity-based community detection methods, such as Louvain and Leiden,
+is the resolution limit problem. Modularity optimization may fail to 
+detect smaller but well-defined communities if merging them with larger groups
+results in a higher overall modularity score.
+
+This limitation is particularly relevant for dense networks such as Bac, where small modules
+may be overlooked in favor of larger communities, leading to a
+less accurate representation of the true community structure.
+
+Although the Leiden algorithm is designed to produce better-connected communities, 
+it is not immune to the resolution limit problem.
+Therefore, the detected partitions should be interpreted as optimal with respect to the 
+chosen resolution parameter rather than as uniquely defined ground-truth communities.

@@ -1,143 +1,166 @@
 \section{Community Detection Methods}
+
 In this section, we will explore the community detection methods that form
 the core of this study.
+
 \subsection{Edge Betweenness}
+
 The edge betweenness method, introduced by Girvan and Newman (2002),
-was made to sidestep the shortcomings of traditional community detection methods like 
+was developed to overcome the shortcomings of traditional community detection methods such as 
 the hierarchical clustering approach. The hierarchical clustering method focuses on 
-trying to construct a measure that tells us which edges are most central to communities.
+constructing a measure that indicates which edges are most central to communities.
 Using these measures, it constructs communities by adding the strongest edges
 to an initially empty graph. However, this method has several drawbacks,
-such as the fact that it relies on a subjective choice of the similarity measure.
+such as relying on a subjective choice of similarity measure.
 Furthermore, because it tries to build communities by adding edges,
-early mistakes made by noise in the data cannot be corrected later on.
-The edge betweenness method, on the other hand, removed weak edges from the 
-original graph, instead of adding edges.
-To find the weak edges of a graoh, Girvan and Newman generalized Freeman's betweenness centrality
+early mistakes caused by noise in the data cannot be corrected later on.
+
+The edge betweenness method, on the other hand, removes weak edges from the 
+original graph instead of adding edges.
+To identify weak edges in a graph, Girvan and Newman generalized Freeman's betweenness centrality
 to edges.
-\textcite{newmanandgirvan2002} states if a network contains communities
-or groups that are only loosely connected by fe integroup edges, then all shortest paths
-different communities must go along one of these few edges. Thus, the edges connecting
-communities will have high edge betweenness. By removing these edges, we seperate groups
-from one another and so reveal the underlying community structure of the graph.
-The algorithm they propose is simply stated as follows:
+
+\textcite{newmanandgirvan2002} state that if a network contains communities
+or groups that are only loosely connected by a few intergroup edges, then all shortest paths
+between different communities must pass through one of these few edges. Thus, the edges connecting
+communities will have high edge betweenness. By removing these edges, we separate groups
+from one another and thereby reveal the underlying community structure of the graph.
+
+The algorithm they propose can be summarized as follows:
+
 \begin{enumerate}
   \item Compute the edge betweenness for all edges in the network.
   \item Remove the edge with the highest edge betweenness.
   \item Recalculate the edge betweenness for all edges affected by the removal.
   \item Repeat from step 2 until no edges remain.
 \end{enumerate}
-The iteration ends when no edges remain, so in praxis, we will have
-to decide when to stop the algorithm. This can be done by looking at the modularity of
+
+The iteration ends when no edges remain; therefore, in practice, we must
+decide when to stop the algorithm. This can be done by evaluating the modularity of
 the network after each iteration and stopping when the modularity is maximized.
-This algorithm is computationally expensive, because we have
-to recalculate the edge betweenness after each iteration. Making the algorithm
-runs in worst-case time $O(m^2n)$, where $m$ is the number of edges and $n$ is 
+
+This algorithm is computationally expensive because we must
+recalculate edge betweenness after each iteration, making the algorithm
+run in worst-case time $O(m^2 n)$, where $m$ is the number of edges and $n$ is 
 the number of nodes in the graph.
- So it is tempting to calculate the betweenness of all edges only once and then remove them in order
-of decreasing betweenness. However, we find that this approach does not work well,
-because if two communities are connected by more than one edge, then there is 
-no guarantee that all of the edges will have high betweenness. So by
-recalculating betweennesses after the removal of each edge, we can ensure that 
+
+It may be tempting to calculate the betweenness of all edges only once and then remove them in order
+of decreasing betweenness. However, this approach does not work well,
+because if two communities are connected by more than one edge, there is 
+no guarantee that all of these edges will have high betweenness. By
+recalculating betweenness after the removal of each edge, we can ensure that 
 at least one of the remaining edges between two communities will always have high betweenness.
 
 \subsection{Louvain Method}
-The Louvain Algorithm introduced by Blondel et al. (2008) is a popular method
+
+The Louvain algorithm, introduced by Blondel et al. (2008), is a popular method
 for community detection in large networks. The core idea is to group nodes 
-so that connections inside communities are denser, than expected at random.
-Louvain does this by greedy, local optmization of the modularity measure, 
+so that connections inside communities are denser than expected at random.
+Louvain achieves this through greedy local optimization of the modularity measure, 
 combined with a hierarchical approach.
+
 The algorithm consists of two phases that are repeated iteratively until no
 further improvement in modularity is possible:
+
 \begin{enumerate}
   \item \textbf{Modularity Optimization:} 
   \begin{itemize}
     \item Initially, each node is assigned to its own community. 
-    \item For each node i, we consider the moving it to the community of each neighbor.
+    \item For each node $i$, we consider moving it to the community of each neighbor.
     \item The change in modularity $\Delta Q$ is calculated for each possible move, 
     and the node is moved to the community that results in the highest increase in modularity.
     $\Delta Q$ is given by the formula: 
-    \[\Delta Q=Q(i \in C)-Q(i \in A)\]
-    where $Q(i \in C)$ is the modularity of the network if node i is moved to community C, 
-    and $Q(i \in A)$ is the modularity if node i remains in its current community A.
-    The formula for calculating modularity is as earlier given by: 
-    \[Q=\frac{1}{2m}\sum_{ij}\left[A_{ij}-\gamma \frac{k_i k_j}{2m}\right]\delta(c_i, c_j)\]
-    where $A_{ij}$ is the adjacency matrix of the graph, $k_i$ and $k_j$ are the degrees of nodes i and j,
-    m is the total number of edges in the graph, $c_i$ and $c_j$ are the communities of nodes i and j, 
-    and $\delta(c_i, c_j)$ is the Kronecker delta function which is 1 if $c_i = c_j$ and 0 otherwise.
-    $\gamma$ is the resolution parameter that allows us to control the size of the communities detected.
-    If $\gamma$ is set to 1, we get the standard modularity. If $\gamma$ is set to a value less than 1, we will get larger communities, 
-    and if $\gamma$ is set to a value greater than 1, we will get smaller communities.
-    We will play around with the resolution parameter later on in the sensitivity analysis section, to see
-    how it affects the community structure of our networks.
+    \[
+    \Delta Q = Q(i \in C) - Q(i \in A)
+    \]
+    where $Q(i \in C)$ is the modularity of the network if node $i$ is moved to community $C$, 
+    and $Q(i \in A)$ is the modularity if node $i$ remains in its current community $A$.
+    The formula for calculating modularity is given by: 
+    \[
+    Q = \frac{1}{2m} \sum_{ij}\left[A_{ij} - \gamma \frac{k_i k_j}{2m}\right]\delta(c_i, c_j)
+    \]
+    where $A_{ij}$ is the adjacency matrix of the graph, $k_i$ and $k_j$ are the degrees of nodes $i$ and $j$,
+    $m$ is the total number of edges in the graph, $c_i$ and $c_j$ are the communities of nodes $i$ and $j$, 
+    and $\delta(c_i, c_j)$ is the Kronecker delta function, which equals 1 if $c_i = c_j$ and 0 otherwise.
+    $\gamma$ is the resolution parameter that allows control over the size of the detected communities.
+    If $\gamma = 1$, we obtain the standard modularity. If $\gamma < 1$, larger communities are detected,
+    and if $\gamma > 1$, smaller communities are detected.
   \end{itemize}
+
   \item \textbf{Community Aggregation:} 
   \begin{itemize}
-    \item After no more individual node movements can increase modularity, we create a 
-    new network where each community is treated as a single node,
-          also known as supernode.
-    \item Edges between supernodes are replaced by wweighted edges,
+    \item After no further individual node movements can increase modularity, we create a 
+    new network in which each community is treated as a single node,
+          also known as a supernode.
+    \item Edges between supernodes are replaced by weighted edges,
           where the weight of the edge between two supernodes is the sum of the weights 
           of the edges between the nodes in the corresponding communities.
-    \item Edges within the same community are represented as self-loops 
+    \item Edges within the same community are represented as self-loops.
   \end{itemize}
 \end{enumerate}
-In the figure below, we can see an visualization of the Louvain method.
+
+In the figure below, we can see a visualization of the Louvain method.
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.4\textwidth]{Pictures/community_detection_methods/Louvain.png}
-\caption{Visual representation of the Louvain method for community detection. Adapted from\cite{Louvain}.}
-\label{fig:louvain}
+  \caption{Visual representation of the Louvain method for community detection. Adapted from~\cite{Louvain}.}
+  \label{fig:louvain}
 \end{figure}
 
 The hierarchical nature of the Louvain method allows it to capture community structure at multiple scales, and it is computationally efficient, 
 with a time complexity of $O(n \log n)$ in practice, making it suitable for large networks.
-However there are several notable limitations to the Louvain method, firstly, it does not guarantee that the detected communities
-are internally connected. In practice, a community may consist of multiple disconnected components.
-Furthermore, the algorithm may converge to a local maximum of modularity, as it only ensures that  no single node move can further increase 
-modularity.
-These shortcomings motivated Traag, Waltman and van Eck (2019) to introduce the Leiden algorithm, which will be discussed in the 
-following section.
 
+However, there are several notable limitations to the Louvain method. First, it does not guarantee that the detected communities
+are internally connected. In practice, a community may consist of multiple disconnected components.
+Furthermore, the algorithm may converge to a local maximum of modularity, as it only ensures that no single node move can further increase 
+modularity.
+These shortcomings motivated Traag, Waltman, and van Eck (2019) to introduce the Leiden algorithm, which is discussed in the following section.
 \subsection{Leiden Method}
-We here introduce the Leiden algorithm, which guarantees well connected communities.
-The algorithm is partly based on the previous introduced smart local moving algorithm, 
+
+We now introduce the Leiden algorithm, which guarantees well-connected communities.
+The algorithm is partly based on the previously introduced smart local moving algorithm, 
 which is a faster version of the Louvain algorithm.
 The Leiden algorithm also takes advantage of the idea of speeding up the local moving of nodes and the idea of moving nodes to 
-a random neighbour by only considering a subset of nodes that are likely to move.\textcite{Leiden} states that they consider
-these ideas to represent the most promising the most promising directions in which Louvain algorithm can be improved,
-even though they recognise that other improvments have been suggested as well.
+a random neighbor by only considering a subset of nodes that are likely to move. \textcite{Leiden} state that they consider
+these ideas to represent the most promising directions in which the Louvain algorithm can be improved,
+even though they recognize that other improvements have been suggested as well.
+
 The Leiden algorithm consists of three phases:
+
 \begin{enumerate}
   \item \textbf{Local Moving of Nodes:} 
   \begin{itemize}
     \item Similar to the Louvain method, each node is initially assigned to its own community.
-    \item For each node i, we consider moving it to the community of each neighbor, and calculate 
+    \item For each node $i$, we consider moving it to the community of each neighbor and calculate 
     the change in modularity $\Delta Q$ for each possible move.
     \item The node is moved to the community that results in the highest increase in modularity, 
     but only if this move does not lead to disconnected communities.
   \end{itemize}
+
   \item \textbf{Refinement of Communities:} 
   \begin{itemize}
     \item After no more individual node movements can increase modularity, we refine the communities
-     by splitting them into smaller subcommunities if it leads to an increase in modularity.
+     by splitting them into smaller subcommunities if this leads to an increase in modularity.
   \end{itemize}
+
   \item \textbf{Community Aggregation:} 
   \begin{itemize}
-    \item Similar to the Louvain method, we create a new network where each community is treated as a single node, 
+    \item Similar to the Louvain method, we create a new network in which each community is treated as a single node, 
     and edges between supernodes are replaced by weighted edges.
   \end{itemize}
 \end{enumerate}
-In the figure below, we can see an visualization of the Leiden method.
+
+In the figure below, we can see a visualization of the Leiden method.
+
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.4\textwidth]{Pictures/community_detection_methods/Leiden.png}
-\caption{Visual representation of the Leiden method for community detection. Adapted from\cite{Leidenplot}.}
-\label{fig:leidenplot}
+  \caption{Visual representation of the Leiden method for community detection. Adapted from~\cite{Leidenplot}.}
+  \label{fig:leidenplot}
 \end{figure}
 
-\textcite{Leiden} explains that in contrast to the Louvain algorithm, 
+\textcite{Leiden} explain that, in contrast to the Louvain algorithm, 
 the Leiden algorithm introduces an 
 additional refinement phase between the local moving phase and the aggregation phase. 
 The purpose of this refinement step is to construct a partition that refines 
@@ -224,7 +247,7 @@ Unlike the Louvain algorithm, the Leiden algorithm may still improve
 the partition even after a stable iteration. When iterated until full 
 convergence, the Leiden algorithm yields a partition satisfying two 
 stronger guarantees:
-\newpage
+
 \begin{enumerate}
     \item All communities are uniformly $\gamma$-dense.
     \item All communities are subset optimal.
@@ -247,12 +270,12 @@ optimality and $\gamma$-separation, the Leiden algorithm provides
 substantially stronger guarantees, ensuring well-connected, structurally 
 cohesive, and near-optimal communities.
 
-Here is an Overview of the guarantees provided by the Louvain algorithm and the Leiden algorithm.
+Here is an overview of the guarantees provided by the Louvain algorithm and the Leiden algorithm.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\textwidth]{Pictures/community_detection_methods/Overview.png}
-\caption{Visual representation of the guarantees of the Leiden algorithm. Adapted from~\cite{OverwiewGuarantees}.}
+\caption{Visual representation of the guarantees of the Leiden algorithm. Adapted from~\cite{OverviewGuarantees}.}
 \label{fig:Overviewguarantees}
 \end{figure}
 
