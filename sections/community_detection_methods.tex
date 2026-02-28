@@ -1,0 +1,48 @@
+\section{Community Detection Methods}
+In this section, we will explore the community detection methods that form
+the core of this study.
+\subsection{Edge Betweenness}
+The edge betweenness method, introduced by Girvan and Newman (2002),
+was made to sidestep the shortcomings of traditional community detection methods like 
+the hierachical clustering approach. The hierachical clustering method focuses on 
+trying to construct a measure that tells us which edges are most central to communities.
+Using these measures, it constructs communities by adding the strongest edges
+to an initiall empty graph. However, this method has several drawbacks,
+such as the fact that it relies on a subjective choice of the similarity measure.
+Furthermore, because it tries to build communities by adding edges,
+early mistakes made by noise in the data cannot be corrected later on.
+The edge betweenness method, on the other hand, removed weak edges from the 
+original graph, instead of adding edges.
+To find the weak edges of a graoh, Girvan and Newman generalized Freeman's betweenness centrality
+to edges. \textcite{newmanandgirvan2002} states if a network contains communities
+or groups that are only loosely connected by fe integroup edges, then all shortest paths
+different communities must go along one of these few edges. Thus, the edges connecting
+communities will have high edge betweenness. By removing these edges, we seperate groups
+from one another and so reveal the underlying community structure of the graph.
+The algorithm they propose is simply stated as follows:
+\begin{enumerate}
+  \item Compute the edge betweenness for all edges in the network.
+  \item Remove the edge with the highest edge betweenness.
+  \item Recalculate the edge betweenness for all edges affected by the removal.
+  \item Repeat from step 2 until no edges remain.
+\end{enumerate}
+The iteration ends when no edges remain, so in praxis, we will have
+to decide when to stop the algorithm. This can be done by looking at the modularity of
+the network after each iteration and stopping when the modularity is maximized.
+This algorithm is computationally expensive, because we have
+to recalculate the edge betweenness after each iteration. Making the algorithm
+runs in worst-case time $O(m^2n)$, where $m$ is the number of edges and $n$ is 
+the number of nodes in the graph.
+ So it is tempting to calculate the betweenness of all edges only once and then remove them in order
+of decreasing betweenness. However, we find that this approach does not work well,
+because if two communities are connected by more than one edge, then there is 
+no guarantee that all of the edges will have high betweenness. So by
+recalculating betweennesses after the removal of each edge, we can ensure that 
+at least one of the remaining edges between two communities will always have high betweenness.
+
+\subsection{Louvain Method}
+The Louvain Algorithm 
+
+
+
+
