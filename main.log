@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.2.28)  1 MAR 2026 00:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.2.28)  1 MAR 2026 00:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -648,20 +648,20 @@ File: Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png Gr
 <use Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png>
 Package pdftex.def Info: Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png  used on input line 66.
 (pdftex.def)             Requested size: 318.66948pt x 102.0753pt.
- [5 <./Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png>] [6]) (sections/similarity_measures_for_community_comparison.tex [7]) (sections/community_detection_methods.tex [8] [9]
-<Pictures/community_detection_methods/Louvain.png, id=312, 502.12593pt x 523.9575pt>
+ [5 <./Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png>] [6]) (sections/similarity_measures_for_community_comparison.tex [7]) (sections/community_detection_methods.tex [8]
+<Pictures/community_detection_methods/Louvain.png, id=307, 502.12593pt x 523.9575pt>
 File: Pictures/community_detection_methods/Louvain.png Graphic file (type png)
 <use Pictures/community_detection_methods/Louvain.png>
 Package pdftex.def Info: Pictures/community_detection_methods/Louvain.png  used on input line 106.
 (pdftex.def)             Requested size: 182.09486pt x 190.01567pt.
- [10 <./Pictures/community_detection_methods/Louvain.png>]
-<Pictures/community_detection_methods/Leiden.png, id=324, 497.60907pt x 389.20406pt>
+ [9] [10 <./Pictures/community_detection_methods/Louvain.png>]
+<Pictures/community_detection_methods/Leiden.png, id=326, 497.60907pt x 389.20406pt>
 File: Pictures/community_detection_methods/Leiden.png Graphic file (type png)
 <use Pictures/community_detection_methods/Leiden.png>
 Package pdftex.def Info: Pictures/community_detection_methods/Leiden.png  used on input line 158.
 (pdftex.def)             Requested size: 182.09486pt x 142.42352pt.
  [11 <./Pictures/community_detection_methods/Leiden.png>] [12]
-<Pictures/community_detection_methods/Overview.png, id=348, 702.37407pt x 261.97874pt>
+<Pictures/community_detection_methods/Overview.png, id=350, 702.37407pt x 261.97874pt>
 File: Pictures/community_detection_methods/Overview.png Graphic file (type png)
 <use Pictures/community_detection_methods/Overview.png>
 Package pdftex.def Info: Pictures/community_detection_methods/Overview.png  used on input line 277.
@@ -678,18 +678,18 @@ Underfull \hbox (badness 1112) in paragraph at lines 278--278
 []\T1/cmr/m/n/10.95 Figure 6: []Visual rep-re-sen-ta-tion of the guar-an-tees of the Lei-den al-go-rithm. Adapted
  []
 
-) (sections/data_description.tex [13 <./Pictures/community_detection_methods/Overview.png>] [14]
-<Pictures/data_description/data_distribution_comparison.png, id=362, 462.528pt x 346.896pt>
+) (sections/data_description.tex [13 <./Pictures/community_detection_methods/Overview.png>]
+<Pictures/data_description/data_distribution_comparison.png, id=358, 462.528pt x 346.896pt>
 File: Pictures/data_description/data_distribution_comparison.png Graphic file (type png)
 <use Pictures/data_description/data_distribution_comparison.png>
-Package pdftex.def Info: Pictures/data_description/data_distribution_comparison.png  used on input line 80.
+Package pdftex.def Info: Pictures/data_description/data_distribution_comparison.png  used on input line 79.
 (pdftex.def)             Requested size: 364.19667pt x 273.16086pt.
- [15]) (sections/experimental_setup.tex [16 <./Pictures/data_description/data_distribution_comparison.png>]) (sections/results.tex [17] [18]) (sections/discussion.tex) (sections/conclusion.tex [19])
+ [14 <./Pictures/data_description/data_distribution_comparison.png>]) (sections/experimental_setup.tex) (sections/results.tex [15] [16]) (sections/discussion.tex) (sections/conclusion.tex [17])
 Overfull \hbox (36.40068pt too wide) in paragraph at lines 44--44
 \T1/cmtt/m/n/10.95 Different -[] types -[] of -[] graphs -[] and -[] their -[] corresponding -[] adjacency -[] matrix -[] representations -[]
  []
 
-[20] [21] (main.aux)
+[18] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -701,17 +701,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19686 strings out of 467867
- 345642 string characters out of 5418334
- 1202150 words of memory out of 5000000
+ 19683 strings out of 467867
+ 345621 string characters out of 5418334
+ 1200150 words of memory out of 5000000
  48223 multiletter control sequences out of 15000+600000
  644406 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,8n,79p,739b,1781s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jonas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (21 pages, 762565 bytes).
+Output written on main.pdf (18 pages, 760373 bytes).
 PDF statistics:
- 903 PDF objects out of 1000 (max. 8388607)
- 112 named destinations out of 1000 (max. 500000)
+ 890 PDF objects out of 1000 (max. 8388607)
+ 109 named destinations out of 1000 (max. 500000)
  484 words of extra memory for PDF output out of 10000 (max. 10000000)
 
