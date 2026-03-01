@@ -6,7 +6,7 @@ import leidenalg as la
 import matplotlib.pyplot as plt
 import time
 
-from script_for_bac import G_bac
+from scripts.script_for_bac import G_bac
 print(os.listdir())
 path = "edges.tsv"
 df = pd.read_csv("Data/Vir/component_1/edges.tsv", sep="\t")
