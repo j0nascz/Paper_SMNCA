@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.2.28)  1 MAR 2026 00:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.2.28)  1 MAR 2026 13:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -629,42 +629,42 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
  (C:\Users\jonas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (sections/introduction.tex
-<Pictures/Introduction/Plot1.jpg, id=227, 1208.515pt x 639.38875pt>
-File: Pictures/Introduction/Plot1.jpg Graphic file (type jpg)
-<use Pictures/Introduction/Plot1.jpg>
-Package pdftex.def Info: Pictures/Introduction/Plot1.jpg  used on input line 36.
+<Figures/Introduction/Plot1.jpg, id=227, 1208.515pt x 639.38875pt>
+File: Figures/Introduction/Plot1.jpg Graphic file (type jpg)
+<use Figures/Introduction/Plot1.jpg>
+Package pdftex.def Info: Figures/Introduction/Plot1.jpg  used on input line 36.
 (pdftex.def)             Requested size: 182.09486pt x 96.33344pt.
  [1
 
-{C:/Users/jonas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Pictures/Introduction/Plot1.jpg>] [2]
-<Pictures/Introduction/Plot2.png, id=253, 269.50688pt x 228.855pt>
-File: Pictures/Introduction/Plot2.png Graphic file (type png)
-<use Pictures/Introduction/Plot2.png>
-Package pdftex.def Info: Pictures/Introduction/Plot2.png  used on input line 92.
+{C:/Users/jonas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Figures/Introduction/Plot1.jpg>] [2]
+<Figures/Introduction/Plot2.png, id=253, 269.50688pt x 228.855pt>
+File: Figures/Introduction/Plot2.png Graphic file (type png)
+<use Figures/Introduction/Plot2.png>
+Package pdftex.def Info: Figures/Introduction/Plot2.png  used on input line 92.
 (pdftex.def)             Requested size: 182.09486pt x 154.63109pt.
-) (sections/network_summary_statistic.tex [3 <./Pictures/Introduction/Plot2.png>] [4]
-<Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png, id=274, 513.92pt x 164.615pt>
-File: Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png Graphic file (type png)
-<use Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png>
-Package pdftex.def Info: Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png  used on input line 66.
+) (sections/network_summary_statistic.tex [3 <./Figures/Introduction/Plot2.png>] [4]
+<Figures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png, id=274, 513.92pt x 164.615pt>
+File: Figures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png Graphic file (type png)
+<use Figures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png>
+Package pdftex.def Info: Figures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png  used on input line 66.
 (pdftex.def)             Requested size: 318.66948pt x 102.0753pt.
- [5 <./Pictures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png>] [6]) (sections/similarity_measures_for_community_comparison.tex [7]) (sections/community_detection_methods.tex [8]
-<Pictures/community_detection_methods/Louvain.png, id=307, 502.12593pt x 523.9575pt>
-File: Pictures/community_detection_methods/Louvain.png Graphic file (type png)
-<use Pictures/community_detection_methods/Louvain.png>
-Package pdftex.def Info: Pictures/community_detection_methods/Louvain.png  used on input line 106.
+ [5 <./Figures/Network_summary_statistic/Random-graph_vs_scale-free-graph.png>] [6]) (sections/similarity_measures_for_community_comparison.tex [7]) (sections/community_detection_methods.tex [8]
+<Figures/community_detection_methods/Louvain.png, id=307, 502.12593pt x 523.9575pt>
+File: Figures/community_detection_methods/Louvain.png Graphic file (type png)
+<use Figures/community_detection_methods/Louvain.png>
+Package pdftex.def Info: Figures/community_detection_methods/Louvain.png  used on input line 106.
 (pdftex.def)             Requested size: 182.09486pt x 190.01567pt.
- [9] [10 <./Pictures/community_detection_methods/Louvain.png>]
-<Pictures/community_detection_methods/Leiden.png, id=326, 497.60907pt x 389.20406pt>
-File: Pictures/community_detection_methods/Leiden.png Graphic file (type png)
-<use Pictures/community_detection_methods/Leiden.png>
-Package pdftex.def Info: Pictures/community_detection_methods/Leiden.png  used on input line 158.
+ [9] [10 <./Figures/community_detection_methods/Louvain.png>]
+<Figures/community_detection_methods/Leiden.png, id=326, 497.60907pt x 389.20406pt>
+File: Figures/community_detection_methods/Leiden.png Graphic file (type png)
+<use Figures/community_detection_methods/Leiden.png>
+Package pdftex.def Info: Figures/community_detection_methods/Leiden.png  used on input line 158.
 (pdftex.def)             Requested size: 182.09486pt x 142.42352pt.
- [11 <./Pictures/community_detection_methods/Leiden.png>] [12]
-<Pictures/community_detection_methods/Overview.png, id=350, 702.37407pt x 261.97874pt>
-File: Pictures/community_detection_methods/Overview.png Graphic file (type png)
-<use Pictures/community_detection_methods/Overview.png>
-Package pdftex.def Info: Pictures/community_detection_methods/Overview.png  used on input line 277.
+ [11 <./Figures/community_detection_methods/Leiden.png>] [12]
+<Figures/community_detection_methods/Overview.png, id=350, 702.37407pt x 261.97874pt>
+File: Figures/community_detection_methods/Overview.png Graphic file (type png)
+<use Figures/community_detection_methods/Overview.png>
+Package pdftex.def Info: Figures/community_detection_methods/Overview.png  used on input line 277.
 (pdftex.def)             Requested size: 364.19667pt x 135.84596pt.
 
 
@@ -678,13 +678,13 @@ Underfull \hbox (badness 1112) in paragraph at lines 278--278
 []\T1/cmr/m/n/10.95 Figure 6: []Visual rep-re-sen-ta-tion of the guar-an-tees of the Lei-den al-go-rithm. Adapted
  []
 
-) (sections/data_description.tex [13 <./Pictures/community_detection_methods/Overview.png>]
-<Pictures/data_description/data_distribution_comparison.png, id=358, 462.528pt x 346.896pt>
-File: Pictures/data_description/data_distribution_comparison.png Graphic file (type png)
-<use Pictures/data_description/data_distribution_comparison.png>
-Package pdftex.def Info: Pictures/data_description/data_distribution_comparison.png  used on input line 79.
+) (sections/data_description.tex [13 <./Figures/community_detection_methods/Overview.png>]
+<Figures/data_description/data_distribution_comparison.png, id=358, 462.528pt x 346.896pt>
+File: Figures/data_description/data_distribution_comparison.png Graphic file (type png)
+<use Figures/data_description/data_distribution_comparison.png>
+Package pdftex.def Info: Figures/data_description/data_distribution_comparison.png  used on input line 79.
 (pdftex.def)             Requested size: 364.19667pt x 273.16086pt.
- [14 <./Pictures/data_description/data_distribution_comparison.png>]) (sections/experimental_setup.tex) (sections/results.tex [15] [16]) (sections/discussion.tex) (sections/conclusion.tex [17])
+ [14 <./Figures/data_description/data_distribution_comparison.png>]) (sections/experimental_setup.tex) (sections/results.tex [15] [16]) (sections/discussion.tex) (sections/conclusion.tex [17])
 Overfull \hbox (36.40068pt too wide) in paragraph at lines 44--44
 \T1/cmtt/m/n/10.95 Different -[] types -[] of -[] graphs -[] and -[] their -[] corresponding -[] adjacency -[] matrix -[] representations -[]
  []
@@ -702,7 +702,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  19683 strings out of 467867
- 345621 string characters out of 5418334
+ 345572 string characters out of 5418334
  1200150 words of memory out of 5000000
  48223 multiletter control sequences out of 15000+600000
  644406 words of font info for 79 fonts, out of 8000000 for 9000
